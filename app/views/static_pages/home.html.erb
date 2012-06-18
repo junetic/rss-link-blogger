@@ -1,0 +1,17 @@
+<div>
+
+	<%  @links.each  do |d| %>
+		<div class="link"> <a href="<%= d %>" target="_blank"><%= d %></a></div>
+	<% end%>
+	
+	<%  @link_titles.each do |t| %>
+		<div> <%= t %></div>
+	<% end%>
+	
+	<%  @img_links.each  do |i| %>
+		<div style="background-image:url(<%= i %>); width:200px; height:200px; background-position:center; border:1px solid #ccc">&nbsp;</div>
+	<% end%>
+	
+	
+	
+</div>
