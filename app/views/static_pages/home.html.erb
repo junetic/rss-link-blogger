@@ -7,11 +7,12 @@
 	<%  @link_titles.each do |t| %>
 		<div> <%= t %></div>
 	<% end%>
-	
+
+<div class="container">
 	<%  @img_links.each  do |i| %>
-		<div style="background-image:url(<%= i %>); width:200px; height:200px; background-position:center; border:1px solid #ccc">&nbsp;</div>
+			<div class="item"><img src="<%= i %>"></div>
 	<% end%>
-	
+</div>
 	
 	
 </div>
