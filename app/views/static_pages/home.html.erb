@@ -1,18 +1,10 @@
-<div>
-
-	<%  @links.each  do |d| %>
-		<div class="link"> <a href="<%= d %>" target="_blank"><%= d %></a></div>
-	<% end%>
-	
-	<%  @link_titles.each do |t| %>
-		<div> <%= t %></div>
-	<% end%>
-
-<div class="container">
-	<%  @img_links.each  do |i| %>
-			<div class="item"><img src="<%= i %>"></div>
-	<% end%>
-</div>
-	
-	
+<div class = "container">	
+	<% 0.upto(@linkcount-1)  do |i| %>
+		<div class="item">
+			<img src="<%= @img_links[i] %>">
+			<h2><%= @link_titles[i] %></h2>
+			<a href="<%= @links[i] %>" target="_blank"><%= @links[i] %></a>
+			
+		</div>
+	<% end %>
 </div>

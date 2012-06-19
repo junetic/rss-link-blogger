@@ -32,6 +32,7 @@ class StaticPagesController < ApplicationController
 				
 			end
 		end
+		@linkcount=@links.count
 
 		def scrape_links
 			#debug @links
