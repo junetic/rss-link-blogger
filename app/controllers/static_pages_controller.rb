@@ -1,6 +1,7 @@
 class StaticPagesController < ApplicationController
 	def home
 		@feed = SimpleRSS.parse open('https://groups.google.com/a/ideo.com/group/iad-ny/feed/rss_v2_0_msgs.xml')
+		#@feed = SimpleRSS.parse open('app/assets/images/rss_v2_0_msgs.xml')
 		@links = []
 		@img_links = []
 		@link_titles = []
@@ -10,7 +11,7 @@ class StaticPagesController < ApplicationController
 
 			# Extract URL from <description> in XML and split string to get rid of crap before/after 
 			u = URI.extract(i.description)
-			u_str = u[0].to_s
+			u_str = u.to_s
 			url = u_str.split("&amp;q=").second.to_s
 			url2= url.split("&amp").first.to_s
 

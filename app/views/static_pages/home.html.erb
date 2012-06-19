@@ -1,10 +1,15 @@
+
 <div class = "container">	
 	<% 0.upto(@linkcount-1)  do |i| %>
+		<a href="<%= @links[i] %>" target="_blank">
 		<div class="item">
+
 			<img src="<%= @img_links[i] %>">
-			<h2><%= @link_titles[i] %></h2>
-			<a href="<%= @links[i] %>" target="_blank"><%= @links[i] %></a>
+			
+				<h1><%= truncate(@link_titles[i].to_s , :length => 40, :omission => '..') %></h1>
+			
 			
 		</div>
+		</a>
 	<% end %>
 </div>

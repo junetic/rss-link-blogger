@@ -2,16 +2,32 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$blue: #3bbfce;
+$dark_grey: #666;
 
-.link, .link a{
-	color: $blue;
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size:10px;
+}
+a:link {
+	color: $dark_grey;
+	text-decoration: none;
+}
+
+a:visited {
+	color: $dark_grey;
+
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+
 }
 
 img {
 	
-	/* width: 300px; */
-	height: 300px;
+	width:220px;
+	height:100%
 	
 }
 
@@ -19,6 +35,15 @@ img {
   width: 220px;
   margin: 10px;
   float: left;
-  border: 1px solid #ccc;
+  border-bottom: 2px solid #999;
   overflow: hidden;
 }
+.item:hover{
+	 border-bottom: 3px solid #000;
+	 color: #000;
+	
+}
+
+
+
+
