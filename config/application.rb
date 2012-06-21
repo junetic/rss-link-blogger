@@ -7,6 +7,8 @@ require 'open-uri'
 require 'uri'
 require 'nokogiri'
 require 'image_scraper'
+require 'fastimage'
+require 'mechanize'
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line

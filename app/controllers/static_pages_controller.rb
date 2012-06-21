@@ -3,8 +3,10 @@ class StaticPagesController < ApplicationController
 		@feed = SimpleRSS.parse open('https://groups.google.com/a/ideo.com/group/iad-ny/feed/rss_v2_0_msgs.xml')
 		#@feed = SimpleRSS.parse open('app/assets/images/rss_v2_0_msgs.xml')
 		@links = []
-		@img_links = []
+		@imgs_from_link = []
+		@imgs_from_all_links = []
 		@link_titles = []
+		@width = 0
 
 		@feed.items.each do |i|
 			#@desc << i.description
@@ -43,13 +45,33 @@ class StaticPagesController < ApplicationController
 				linkt = doc.xpath('//title').text
 				@link_titles << linkt
 
-				#Scrape Images
+				# #Scrape Images
 				image_scraper = ImageScraper::Client.new(t)
-				@img_links << image_scraper.image_urls[1]
+				@imgs_from_link = image_scraper.image_urls[1]
+				@imgs_from_all_links << @imgs_from_link
+				# agent = Mechanize.new
+				# doc = agent.get(url)
+				# agent.get(doc.parser.at('img')['src']).save
+				
 			end
 		end
 
+		# def get_largest_image
+
+		# 	#@imgs_from_all_links.each do |t|
+		# 		@imgs_from_link.each do |t|
+		# 			size = FastImage.size(t)
+		# 			@width = size[0]
+		# 			if @width > 100
+		# 				@imglink << t
+		# 			end
+		# 		end
+		# 	#end
+
+		# end
+
 		scrape_links
+		# get_largest_image
 
 
 	end
