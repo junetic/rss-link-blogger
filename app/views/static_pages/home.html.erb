@@ -1,10 +1,15 @@
-
+<%= @imglink %>
+<%= @width %>
 <div class = "container">	
 	<% 0.upto(@linkcount-1)  do |i| %>
 		<a href="<%= @links[i] %>" target="_blank">
 		<div class="item">
 
+<<<<<<< HEAD
 			<img src="<%= @imgs_from_all_links[i] %>">
+=======
+			<img src="<%= @imglink[i] %>">
+>>>>>>> image scraper loop tweaks
 			
 				<h1><%= truncate(@link_titles[i].to_s , :length => 40, :omission => '..') %></h1>
 			

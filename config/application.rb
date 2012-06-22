@@ -8,7 +8,10 @@ require 'uri'
 require 'nokogiri'
 require 'image_scraper'
 require 'fastimage'
+<<<<<<< HEAD
 require 'mechanize'
+=======
+>>>>>>> image scraper loop tweaks
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
