@@ -33,10 +33,10 @@ class StaticPagesController < ApplicationController
 					url2=url2.sub('https','http')
 					
 				end
-				#@links << url2
+				@links << url2
 				@links.reject! { |e| e.empty? }
-				#temporary substitute links not using feed
-				@links =  ["http://www.qbn.com","http://www.boingboing.net", "http://www.fastcodesign.com", "http://www.nytimes.com","http://www.theverge.com"]
+				#@links_count = @links.count
+				#@links =  ["http://www.qbn.com","http://www.boingboing.net", "http://www.fastcodesign.com", "http://www.nytimes.com","http://www.theverge.com"]
 			end
 		end
 		@linkcount=@links.count
