@@ -15,11 +15,7 @@ gem 'nokogiri'
 gem 'simple-rss'
 gem 'image_scraper'
 gem 'fastimage'
-<<<<<<< HEAD
-gem 'mechanize'
-=======
 
->>>>>>> image scraper loop tweaks
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do

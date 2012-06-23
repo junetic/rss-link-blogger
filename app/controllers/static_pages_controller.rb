@@ -33,7 +33,7 @@ class StaticPagesController < ApplicationController
 				#@links << url2
 				@links.reject! { |e| e.empty? }
 				#temporary substitute links not using feed
-				@links =  ["http://www.qbn.com","http://www.boingboing.net", "http://www.fastcodesign.com", "http://www.nytimes.com","http://www.theverge.com"]
+				@links =  ["http://www.wired.com","http://www.creativemornings.com", "http://www.qbn.com","http://www.boingboing.net", "http://www.fastcodesign.com", "http://www.nytimes.com","http://www.theverge.com"]
 			end
 		end
 		@linkcount=@links.count
@@ -61,9 +61,12 @@ class StaticPagesController < ApplicationController
 				0.upto(@imgs_from_link.count-1)  do |z|
 					@size = FastImage.size(@imgs_from_all_links[i][z])
 					@width = @size[0]
-					if @width > 200
+					if @width > 400
 						@imglink << @imgs_from_all_links[i][z]
-
+						break
+					elsif @width > 200
+						@imglink << @imgs_from_all_links[i][z]
+						break
 					end
 
 				end

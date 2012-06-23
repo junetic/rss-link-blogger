@@ -1,7 +1,7 @@
-$(function(){
-  $('#container').masonry({
-    // options
-    itemSelector : '.item',
-    columnWidth : 300
-  	});
+var $container = $('#container');
+
+$container.imagesLoaded( function(){
+  $container.masonry({
+    itemSelector : '.box'
+  });
 });
