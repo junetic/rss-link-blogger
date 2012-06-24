@@ -7,7 +7,6 @@ require 'open-uri'
 require 'uri'
 require 'nokogiri'
 require 'image_scraper'
-require 'fastimage'
 
 
 

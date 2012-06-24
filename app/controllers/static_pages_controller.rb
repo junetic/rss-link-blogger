@@ -1,3 +1,5 @@
+require 'fastimage.rb'
+
 class StaticPagesController < ApplicationController
 	def home
 		@feed = SimpleRSS.parse open('https://groups.google.com/a/ideo.com/group/iad-ny/feed/rss_v2_0_msgs.xml')
@@ -30,10 +32,10 @@ class StaticPagesController < ApplicationController
 					url2=url2.sub('https','http')
 					
 				end
-				#@links << url2
+				@links << url2
 				@links.reject! { |e| e.empty? }
 				#temporary substitute links not using feed
-				@links =  ["http://www.wired.com","http://www.creativemornings.com", "http://www.qbn.com","http://www.boingboing.net", "http://www.fastcodesign.com", "http://www.nytimes.com","http://www.theverge.com"]
+				 #@links =  ["http://www.fastcodesign.com/1670096/create-uis-out-of-anything-with-this-kit-from-mit#1","http://www.creativemornings.com", "http://www.qbn.com","http://www.boingboing.net", "http://www.fastcodesign.com", "http://www.nytimes.com","http://www.theverge.com"]
 			end
 		end
 		@linkcount=@links.count
@@ -48,7 +50,7 @@ class StaticPagesController < ApplicationController
 
 				#Scrape Images
 				image_scraper = ImageScraper::Client.new(t)
-				@imgs_from_link = image_scraper.image_urls[0..10]
+				@imgs_from_link = image_scraper.image_urls[0..5]
 
 				@imgs_from_all_links << @imgs_from_link
 				
@@ -59,6 +61,7 @@ class StaticPagesController < ApplicationController
 			# @size=FastImage.size(@imgs_from_all_links[0][5])
 			0.upto(@imgs_from_all_links.count-1)  do |i|
 				0.upto(@imgs_from_link.count-1)  do |z|
+					logger.debug " @imgs_from_all_links[i][z]"
 					@size = FastImage.size(@imgs_from_all_links[i][z])
 					@width = @size[0]
 					if @width > 400
