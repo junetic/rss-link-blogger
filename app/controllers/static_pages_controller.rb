@@ -90,15 +90,17 @@ class StaticPagesController < ApplicationController
 						@width = @size[0]
 						@height = @size[1]
 
-						if @width > 350 and @height >10
+						if @width > 250 and @height >10
 							@imglink << z
 							break
 						#if loop is finishing with no large images, put a turtle on it
 						elsif z == i.last
 							@imglink << "http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg"
 							break
-
 						end
+					else
+						@imglink << "http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg"
+						break
 					end
 					
 				end
