@@ -14,7 +14,7 @@ end
 gem 'nokogiri'
 gem 'simple-rss'
 gem 'image_scraper'
-# gem 'fastimage'
+gem 'fastimage'
 
 # Gems used only for assets and not required
 # in production environments by default.

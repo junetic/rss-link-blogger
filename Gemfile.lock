@@ -46,6 +46,7 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    fastimage (1.2.13)
     hike (1.2.1)
     i18n (0.6.0)
     image_scraper (0.1.7)
@@ -120,6 +121,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord-postgresql-adapter
   coffee-rails (~> 3.2.1)
+  fastimage
   image_scraper
   jquery-rails
   nokogiri
