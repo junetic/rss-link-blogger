@@ -3,15 +3,16 @@ class StaticPagesController < ApplicationController
 		@feed = SimpleRSS.parse open('https://groups.google.com/a/ideo.com/group/iad-ny/feed/rss_v2_0_msgs.xml')
 		#@feed = SimpleRSS.parse open('app/assets/images/rss_v2_0_msgs.xml')
 		@links = []
-		@imglink = []
-		@imgs_from_link = []
-		@imgs_from_all_links = []
+		@imgs= {}
+		@imgs_and_links = {}
 		@link_titles = []
+		@imglink = []
 
 		@width = 0
 		@height = 0
 		@size = []
-
+		@size_hash = {}
+		
 		@feed.items.each do |i|
 			#@desc << i.description
 
@@ -38,7 +39,7 @@ class StaticPagesController < ApplicationController
 				@links = @links.uniq
 				# puts "LINKS" , @links
 				#temporary substitute links not using feed
-				# @links =  ["http://www.boingboing.net","http://www.buzzfeed.com","http://www.theverge.com/2012/6/24/3114091/sony-xperia-ion-review","http://www.apple.com","http://www.wired.com"]
+				# @links =  ["http://www.buildwithchrome.com/static/map","http://www.buzzfeed.com","http://www.theverge.com/2012/6/24/3114091/sony-xperia-ion-review","http://www.apple.com","http://www.wired.com"]
 			
 			end
 		end
@@ -51,61 +52,62 @@ class StaticPagesController < ApplicationController
 				doc = Nokogiri::HTML(open(t))
 				linkt = doc.xpath('//title').text
 				@link_titles << linkt
-
+			
 				#Scrape Images
-				# image_scraper = ImageScraper::Client.new(t, :include_css_images=> true,  :convert_to_absolute_url=> true)
-				# # image_scraper = ImageScraper::Client.new(t)
-				# @imgs_from_link = image_scraper.image_urls[0..10]
-				# puts "imglinks", @imgs_from_link
-				# @imgs_from_all_links << @imgs_from_link
-				@imgs_from_link = []	
 				doc.xpath("//img").each do |img|
-					
 					next if img["src"].blank?
        				image = URI.escape(img["src"].strip)
        				if image.include? 'https' 
 						image=image.sub('https','http')
+
+					elsif image.exclude? 'http'
+						# make into absolute url
+						 image = URI.parse(t).merge(URI.parse image.to_s).to_s
+						 # puts image
 					end
-        			# image = URI.parse(image).merge(URI.parse t.to_s).to_s
-        			@imgs_from_link << image
-        			@imgs_from_link = @imgs_from_link[0..10]
+        			# final hash looks like..{link => {"img_url"=> 0}}
+        			@imgs[image]=0
+        			@imgs = Hash[@imgs.sort_by{|k,v| -v}[0..6]]
+					@imgs_and_links[t] = @imgs
+					# puts "@imgs_and_links", @imgs_and_links
+					# puts "@imgs", @imgs
+				
 				end
-				@imgs_from_all_links << @imgs_from_link
+
+				
 			
 			end
 
-			 	get_largest_image @imgs_from_all_links
-
-
+			 	 get_largest_image @imgs_and_links
+	
 		end
 		
 		def get_largest_image m
-			# @imgs_from_all_links = [["http://www.darylhunt.net/storage/2links.jpg?__SQUARESPACE_CACHEVERSION=1290682400495","http://images4.wikia.nocookie.net/__cb20100624200030/zelda/images/9/9d/Link_Artwork_1_(Twilight_Princess).png"],["http://1.bp.blogspot.com/_i0oWqaDvHK4/TKY5Z3npauI/AAAAAAAAABg/inVCuivT8vg/s1600/Links+Image.gif","http://4.bp.blogspot.com/-t340iHddQbc/TkBE8iCDfJI/AAAAAAAAAEA/DSCU66P5CwU/s1600/mail.jpeg"],["http://www.darylhunt.net/storage/2links.jpg?__SQUARESPACE_CACHEVERSION=1290682400495","http://images4.wikia.nocookie.net/__cb20100624200030/zelda/images/9/9d/Link_Artwork_1_(Twilight_Princess).png"],["http://1.bp.blogspot.com/_i0oWqaDvHK4/TKY5Z3npauI/AAAAAAAAABg/inVCuivT8vg/s1600/Links+Image.gif","http://4.bp.blogspot.com/-t340iHddQbc/TkBE8iCDfJI/AAAAAAAAAEA/DSCU66P5CwU/s1600/mail.jpeg"]]
-			m.each do |i|
 
-				i.each do |z|
-					@size = FastImage.size(z)
+			m.each do |k,v|
+				v.each do |i,s|
+
+					@size = FastImage.size(i)
 					unless @size.nil? 
-						# puts "SIZE", @size[0]
 						@width = @size[0]
-						@height = @size[1]
+						v[i] = @width
 
-						if @width > 250 and @height >10
-							@imglink << z
-							break
-						#if loop is finishing with no large images, put a turtle on it
-						elsif z == i.last
-							@imglink << "http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg"
-							break
-						end
+						# if z == v.last
+							largest_image = v.values.max
+							puts "v",v
+							# puts " @size_hash", @size_hash
+							@imglink << largest_image
+							# break
+					 	# end
 					else
-						@imglink << "http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg"
-						break
-					end
+						# @imglink << "http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg"
+						# break
 					
+					end
+				
 				end
-
 			end
+			puts "@imgs_and_links", @imgs_and_links
 		end
 		scrape_links
 		

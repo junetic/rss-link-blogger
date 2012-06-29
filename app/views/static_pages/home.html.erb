@@ -1,3 +1,4 @@
+<%= @imglink %>
 <h1>Link Blogger <h1>
 <div class = "container">	
 	<% 0.upto(@linkcount-1)  do |i| %>
@@ -6,10 +7,10 @@
 		<div class="box">
 
 			<img src="<%= @imglink[i] %>">
-			
+
 				<h2><%= truncate(@link_titles[i].to_s , :length => 40, :omission => '..') %></h2>
-			
-			
+
+
 		</div>
 		</a>
 	<% end %>
