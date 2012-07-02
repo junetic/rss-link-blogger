@@ -1,5 +1,6 @@
 Rssapp::Application.routes.draw do
   root to: 'static_pages#home'
+   match '/parse',  to: 'entries#parse_feed'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

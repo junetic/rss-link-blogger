@@ -1,16 +1,15 @@
-<%= @imglink %>
-<h1>Link Blogger <h1>
+<h1>Did You See This?!?? <h1>
 <div class = "container">	
-	<% 0.upto(@linkcount-1)  do |i| %>
+	<% @entries.each  do |entry| %>
 
-		<a href="<%= @links[i] %>" target="_blank">
+		<a href="<%= entry.link %>" target="_blank">
 		<div class="box">
 
-			<img src="<%= @imglink[i] %>">
-
-				<h2><%= truncate(@link_titles[i].to_s , :length => 40, :omission => '..') %></h2>
-
-
+			<img src="<%= entry.imgurl %>">
+			
+				<h2><%= truncate(entry.title.to_s , :length => 40, :omission => '..') %></h2>
+			
+			
 		</div>
 		</a>
 	<% end %>

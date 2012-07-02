@@ -13,3 +13,16 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+/.DS_Store
+
+app/controllers/.DS_Store
+
+app/.DS_Store
+
+app/.DS_Store
+
+app/views/static_pages/.DS_Store
+
+app/views/.DS_Store
+
+app/views/static_pages/.DS_Store
