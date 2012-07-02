@@ -18,7 +18,7 @@ class EntriesController < ApplicationController
 			url2= url.split("&amp").first.to_s
 
 			
-			if url2.include? 'www.ideo.com'
+			if url2.include? 'www.ideo.com' or 'severe-ocean-8569.herokuapp.com'
 				url2=""
 
 			else
