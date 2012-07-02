@@ -3,9 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 $dark_grey: #666;
+$font: 'Montserrat', sans-serif;
+// $font: "adelle",serif;
+//$font: "freight-sans-pro-n9",sans-serif;
 
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: $font;
 	font-size:10px;
 }
 a:link {
@@ -19,12 +22,12 @@ a:visited {
 }
 
 h1 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: $font;
 	font-size: 40px;
 }
 h2 {
-	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
+
 
 }
 
