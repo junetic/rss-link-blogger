@@ -111,7 +111,7 @@ class EntriesController < ApplicationController
 	def save_scraped_data
 		# Entry.destroy_all
 		0.upto(@linkcount-1)  do |i|
-			Entry.create(:link =>@links[i], :title => @link_titles[i], :imgurl => @imglink[i])
+			Entry.find_or_create_by_link_and_title_and_imgurl(:link =>@links[i], :title => @link_titles[i], :imgurl => @imglink[i])
 			
 
 		end
