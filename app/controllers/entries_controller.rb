@@ -1,7 +1,7 @@
 class EntriesController < ApplicationController
 	puts "PARSING"
 	def parse_feed
-		@feed = SimpleRSS.parse open('https://groups.google.com/a/ideo.com/group/iad-ny/feed/rss_v2_0_msgs.xml')
+		@feed = SimpleRSS.parse open('https://groups.google.com/a/ideo.com/group/iad-ny/feed/rss_v2_0_msgs.xml?num=50')
 		#@feed = SimpleRSS.parse open('app/assets/images/rss_v2_0_msgs.xml')
 		@links = []
 		@imgs_and_links = {}
@@ -112,8 +112,9 @@ class EntriesController < ApplicationController
 	def save_scraped_data
 		# Entry.destroy_all
 		0.upto(@linkcount-1)  do |i|
-			Entry.find_or_create_by_link_and_title_and_imgurl(:link =>@links[i], :title => @link_titles[i], :imgurl => @imglink[i])
-			
+			e = Entry.find_or_create_by_link_and_title(:link =>@links[i], :title => @link_titles[i])
+			e.imgurl = @imglink[i]
+			e.save
 
 		end
 	end
