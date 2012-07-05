@@ -1,5 +1,5 @@
 class EntriesController < ApplicationController
-	puts "PARSING"
+	
 	def parse_feed
 		@feed = SimpleRSS.parse open('https://groups.google.com/a/ideo.com/group/iad-ny/feed/rss_v2_0_msgs.xml?num=50')
 		#@feed = SimpleRSS.parse open('app/assets/images/rss_v2_0_msgs.xml')
@@ -16,12 +16,12 @@ class EntriesController < ApplicationController
 			u_str = u.to_s
 			url = u_str.split("&amp;q=").second.to_s
 			url2= url.split("&amp").first.to_s
-
+			puts "URL2", url2
 			
 			if url2.include? 'www.ideo.com' 
 				url2=""
-			elsif url2 == "http://severe-ocean-8569.herokuapp.com"
-				url2=""
+			 elsif url2 == "http://severe-ocean-8569.herokuapp.com"
+			 	url2=""
 			else
 				if url2.include? 'https' 
 					url2=url2.sub('https','http')
@@ -30,6 +30,7 @@ class EntriesController < ApplicationController
 				@links << url2
 				@links.reject! { |e| e.empty? }
 				@links = @links.uniq
+				puts "@links", @links
 				#temporary substitute links not using feed
 				# @links =  ["http://www.buildwithchrome.com/static/map","http://www.buzzfeed.com","http://www.theverge.com/2012/6/24/3114091/sony-xperia-ion-review","http://www.apple.com","http://www.wired.com"]
 
