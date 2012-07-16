@@ -10,6 +10,8 @@ $font: 'Montserrat', sans-serif;
 body {
 	font-family: $font;
 	font-size:10px;
+	background-image: url('rainbow_bg.png');
+	margin: 0px 0px 0px 0px;
 }
 a:link {
 	color: $dark_grey;
@@ -21,35 +23,49 @@ a:visited {
 
 }
 
-h1 {
-	font-family: $font;
-	font-size: 40px;
+header{
+	text-align: center;
+	padding: 4px 0px 0px 0px;
+	background-color:#000;
+	color:#fff;
+	height:16px;
+	letter-spacing:5px;
 }
-h2 {
-	font-size: 20px;
-
-
-}
-
 
 img {
-	
-	width:300px;
-	height:100%;
-	max-height: 500px;
+	max-height:500px;
+	width:320px;
+
+}
+.right{
+	position:absolute;
+	right:20px;
+	top:4px;
+}
+.grey{
+	color: #666;
+
 }
 
+#container{
+ 	clear: both; 
+	margin: 0 auto;
+}
 .box {
-  width: 300px;
-
-  margin: 10px;
+  width: 320px;
+  text-align:left;
+  font-size:16px;
+  margin: 20px 20px 0px 0px;
   float: left;
-  border-bottom: 2px solid #999;
   overflow: hidden;
+  padding: 12px;
+  background-color: rgba(255,255,255,.9);
+  color:#333;
+
 }
 .box:hover{
-	 border-bottom: 2px solid #000;
-	 color: #000;
+	background-color:#000;
+	 color: #fff;
 	
 }
 
