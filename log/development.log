@@ -7304,3 +7304,1685 @@ Served asset /application.css - 304 Not Modified (3ms)
 
 Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-07-15 22:20:01 -0400
 Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 22:26:09 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mEntry Load (0.5ms)[0m  [1mSELECT "entries".* FROM "entries" ORDER BY created_at[0m
+  Rendered static_pages/home.html.erb within layouts/application (25.4ms)
+Compiled static_pages.css  (67ms)  (pid 89434)
+Compiled application.css  (83ms)  (pid 89434)
+Compiled jquery.masonry.min.js  (0ms)  (pid 89434)
+Compiled masonry.js  (0ms)  (pid 89434)
+Compiled application.js  (198ms)  (pid 89434)
+Completed 200 OK in 633ms (Views: 533.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 22:26:10 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[35mEntry Load (0.4ms)[0m  SELECT "entries".* FROM "entries" ORDER BY created_at
+  Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:11 -0400
+Served asset /application.css - 200 OK (12ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:11 -0400
+Served asset /entries.css - 200 OK (3ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:11 -0400
+Served asset /static_pages.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:11 -0400
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:11 -0400
+Served asset /jquery_ujs.js - 200 OK (10ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:11 -0400
+Served asset /entries.js - 200 OK (26ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:11 -0400
+Served asset /masonry.js - 200 OK (70ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:11 -0400
+Served asset /static_pages.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:11 -0400
+Served asset /jquery.masonry.min.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:11 -0400
+Served asset /application.js - 200 OK (14ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-07-18 22:26:11 -0400
+Served asset /rainbow_bg.png - 200 OK (22ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 22:26:25 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mEntry Load (0.4ms)[0m  [1mSELECT "entries".* FROM "entries" ORDER BY created_at[0m
+  Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:25 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:25 -0400
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:25 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:25 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:25 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:25 -0400
+Served asset /jquery.masonry.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:25 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:25 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:25 -0400
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:25 -0400
+Served asset /masonry.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-07-18 22:26:25 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 22:26:36 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[35mEntry Load (0.8ms)[0m  SELECT "entries".* FROM "entries" ORDER BY created_at
+  Rendered static_pages/home.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:36 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:36 -0400
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:36 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:36 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:36 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:36 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:36 -0400
+Served asset /jquery.masonry.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:36 -0400
+Served asset /masonry.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:36 -0400
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:36 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-07-18 22:26:36 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 22:26:37 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mEntry Load (1.1ms)[0m  [1mSELECT "entries".* FROM "entries" ORDER BY created_at[0m
+  Rendered static_pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:37 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:37 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:37 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:37 -0400
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:37 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:37 -0400
+Served asset /masonry.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:37 -0400
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:37 -0400
+Served asset /jquery.masonry.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:37 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:37 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-07-18 22:26:37 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 22:26:38 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[35mEntry Load (0.4ms)[0m  SELECT "entries".* FROM "entries" ORDER BY created_at
+  Rendered static_pages/home.html.erb within layouts/application (49.9ms)
+Completed 200 OK in 60ms (Views: 57.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:38 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:38 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:38 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:38 -0400
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:38 -0400
+Served asset /masonry.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:38 -0400
+Served asset /jquery.masonry.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:38 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:38 -0400
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:38 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:38 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-07-18 22:26:38 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 22:26:43 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mEntry Load (0.3ms)[0m  [1mSELECT "entries".* FROM "entries" ORDER BY created_at[0m
+  Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 11ms (Views: 7.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:43 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:43 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:43 -0400
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:43 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:43 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:43 -0400
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:43 -0400
+Served asset /jquery.masonry.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:43 -0400
+Served asset /masonry.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:43 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:43 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-07-18 22:26:44 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 22:26:44 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[35mEntry Load (0.4ms)[0m  SELECT "entries".* FROM "entries" ORDER BY created_at
+  Rendered static_pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 10ms (Views: 7.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:44 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:44 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:44 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:44 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:44 -0400
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:44 -0400
+Served asset /masonry.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:44 -0400
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:44 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:44 -0400
+Served asset /jquery.masonry.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:44 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-07-18 22:26:44 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 22:26:45 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mEntry Load (0.3ms)[0m  [1mSELECT "entries".* FROM "entries" ORDER BY created_at[0m
+  Rendered static_pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:45 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:45 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:45 -0400
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:45 -0400
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:45 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:45 -0400
+Served asset /jquery.masonry.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:45 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:45 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:45 -0400
+Served asset /masonry.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:45 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-07-18 22:26:45 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 22:26:46 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[35mEntry Load (0.3ms)[0m  SELECT "entries".* FROM "entries" ORDER BY created_at
+  Rendered static_pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:46 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:46 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:46 -0400
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:46 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:46 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:46 -0400
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:46 -0400
+Served asset /masonry.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:46 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:46 -0400
+Served asset /jquery.masonry.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:46 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-07-18 22:26:46 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 22:26:46 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mEntry Load (0.3ms)[0m  [1mSELECT "entries".* FROM "entries" ORDER BY created_at[0m
+  Rendered static_pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:46 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:46 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:46 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:46 -0400
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:46 -0400
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:46 -0400
+Served asset /masonry.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:46 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:46 -0400
+Served asset /jquery.masonry.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:46 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:46 -0400
+Served asset /static_pages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-07-18 22:26:46 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 22:26:47 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[35mEntry Load (0.3ms)[0m  SELECT "entries".* FROM "entries" ORDER BY created_at
+  Rendered static_pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:47 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:47 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:47 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:47 -0400
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:47 -0400
+Served asset /jquery.masonry.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:47 -0400
+Served asset /masonry.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:47 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:47 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:47 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:47 -0400
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-07-18 22:26:47 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 22:26:48 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mEntry Load (0.3ms)[0m  [1mSELECT "entries".* FROM "entries" ORDER BY created_at[0m
+  Rendered static_pages/home.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 61ms (Views: 60.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:48 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:48 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:48 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:48 -0400
+Served asset /jquery.masonry.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-07-18 22:26:48 -0400
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:48 -0400
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:48 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:48 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:48 -0400
+Served asset /masonry.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 22:26:48 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-07-18 22:26:48 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/parse" for 127.0.0.1 at 2012-07-18 22:27:00 -0400
+Processing by EntriesController#parse_feed as HTML
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://fffff.at/noisy-typer-a-typewriter-for-your-laptop/' AND "entries"."title" = 'Noisy Typer – a typewriter for your laptop. | F.A.T.' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (45.6ms)[0m  INSERT INTO "entries" ("created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Thu, 19 Jul 2012 02:27:41 UTC +00:00], ["imgurl", nil], ["link", "http://fffff.at/noisy-typer-a-typewriter-for-your-laptop/"], ["title", "Noisy Typer – a typewriter for your laptop. | F.A.T."], ["updated_at", Thu, 19 Jul 2012 02:27:41 UTC +00:00]]
+  [1m[36m (9.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://fffff.at/files/2012/07/fatdrone.jpg?e83a2c', "updated_at" = '2012-07-19 02:27:41.433911' WHERE "entries"."id" = 8[0m
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36mEntry Load (0.3ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://vimeo.com/41772735' AND "entries"."title" = 'How to Use FF Chartwell on Vimeo' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://pinterest.com/source/uniqlo.com/' AND "entries"."title" = 'Uniqlo / Pinterest' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  UPDATE "entries" SET "imgurl" = 'http://media-cache-ec0.pinterest.com/upload/224265256414886057_vEIz5Qnp_b.jpg', "updated_at" = '2012-07-19 02:27:41.511352' WHERE "entries"."id" = 2
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.fastcodesign.com/1670096/create-uis-out-of-anything-with-this-kit-from-mit%231' AND "entries"."title" = 'Create UIs Out of Anything, With This Kit From MIT | Co.Design: business + innovation + design' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.theverge.com/2012/6/19/3094096/frog-design-android-feel-ux-sharp' AND "entries"."title" = 'Frog redesigns the Android user experience with Feel_UX | The Verge' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.ustream.tv/channel-popup/Shiba-Inu-Puppy-Cam' AND "entries"."title" = 'Ustream.Tv' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.pixartouchbook.com/blog/2011/5/15/pixar-story-rules-one-version.html' AND "entries"."title" = 'The Pixar Touch - history of Pixar - Blog - Pixar story rules (one version)' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://live.leapmotion.com/index.html' AND "entries"."title" = 'Leap Motion' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  Rendered entries/parse_feed.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 41398ms (Views: 17.1ms | ActiveRecord: 62.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-18 22:27:41 -0400
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-07-18 22:27:41 -0400
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-07-18 22:27:41 -0400
+Served asset /entries.css - 200 OK (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-07-18 22:27:41 -0400
+Served asset /entries.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-07-18 22:27:41 -0400
+Served asset /static_pages.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 22:27:41 -0400
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-07-18 22:27:41 -0400
+Served asset /jquery.masonry.min.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 22:27:41 -0400
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 22:27:41 -0400
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-07-18 22:27:41 -0400
+Served asset /masonry.js - 200 OK (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-07-18 22:27:42 -0400
+Served asset /rainbow_bg.png - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 22:28:04 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mEntry Load (0.4ms)[0m  [1mSELECT "entries".* FROM "entries" ORDER BY created_at[0m
+  Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 22:31:31 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[35mEntry Load (0.4ms)[0m  SELECT "entries".* FROM "entries" ORDER BY created_at DESC
+  Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 52ms (Views: 11.3ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-07-18 22:31:31 -0400
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 22:31:31 -0400
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 22:31:31 -0400
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-07-18 22:31:31 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-07-18 22:31:31 -0400
+Served asset /entries.js - 200 OK (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-07-18 22:31:31 -0400
+Served asset /masonry.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 22:31:31 -0400
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-07-18 22:31:31 -0400
+Served asset /jquery.masonry.min.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-07-18 22:31:31 -0400
+Served asset /static_pages.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-18 22:31:31 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-07-18 22:31:32 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/parse" for 127.0.0.1 at 2012-07-18 22:32:02 -0400
+Processing by EntriesController#parse_feed as HTML
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://fffff.at/noisy-typer-a-typewriter-for-your-laptop/' AND "entries"."title" = 'Noisy Typer – a typewriter for your laptop. | F.A.T.' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://vimeo.com/41772735' AND "entries"."title" = 'How to Use FF Chartwell on Vimeo' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://pinterest.com/source/uniqlo.com/' AND "entries"."title" = 'Uniqlo / Pinterest' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.fastcodesign.com/1670096/create-uis-out-of-anything-with-this-kit-from-mit%231' AND "entries"."title" = 'Create UIs Out of Anything, With This Kit From MIT | Co.Design: business + innovation + design' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.theverge.com/2012/6/19/3094096/frog-design-android-feel-ux-sharp' AND "entries"."title" = 'Frog redesigns the Android user experience with Feel_UX | The Verge' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.ustream.tv/channel-popup/Shiba-Inu-Puppy-Cam' AND "entries"."title" = 'Ustream.Tv' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.pixartouchbook.com/blog/2011/5/15/pixar-story-rules-one-version.html' AND "entries"."title" = 'The Pixar Touch - history of Pixar - Blog - Pixar story rules (one version)' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://live.leapmotion.com/index.html' AND "entries"."title" = 'Leap Motion' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  UPDATE "entries" SET "imgurl" = 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', "updated_at" = '2012-07-19 02:32:44.940069' WHERE "entries"."id" = 7
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  Rendered entries/parse_feed.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 42883ms (Views: 7.5ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-18 22:32:45 -0400
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-07-18 22:32:45 -0400
+Served asset /entries.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 22:32:45 -0400
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-07-18 22:32:45 -0400
+Served asset /jquery.masonry.min.js - 200 OK (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-07-18 22:32:45 -0400
+Served asset /entries.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 22:32:45 -0400
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-07-18 22:32:45 -0400
+Served asset /static_pages.js - 200 OK (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-07-18 22:32:45 -0400
+Served asset /masonry.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 22:32:45 -0400
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-07-18 22:32:45 -0400
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-07-18 22:32:45 -0400
+Served asset /rainbow_bg.png - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 22:32:54 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[35mEntry Load (0.4ms)[0m  SELECT "entries".* FROM "entries" ORDER BY created_at DESC
+  Rendered static_pages/home.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 22:32:54 -0400
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 22:32:54 -0400
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-07-18 22:32:54 -0400
+Served asset /entries.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 22:32:54 -0400
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-07-18 22:32:54 -0400
+Served asset /jquery.masonry.min.js - 200 OK (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-07-18 22:32:54 -0400
+Served asset /masonry.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-07-18 22:32:54 -0400
+Served asset /static_pages.js - 200 OK (0ms)
+  [1m[36m (23.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.4ms)[0m  CREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "link" varchar(255), "imgurl" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (12.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120619163928')[0m
+  [1m[35m (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 22:38:35 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mEntry Load (0.3ms)[0m  [1mSELECT "entries".* FROM "entries" ORDER BY created_at DESC[0m
+  Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 22:38:35 -0400
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-07-18 22:38:35 -0400
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-07-18 22:38:35 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 22:38:35 -0400
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-07-18 22:38:35 -0400
+Served asset /entries.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-18 22:38:35 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-07-18 22:38:35 -0400
+Served asset /jquery.masonry.min.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-07-18 22:38:35 -0400
+Served asset /static_pages.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 22:38:35 -0400
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-07-18 22:38:35 -0400
+Served asset /masonry.js - 200 OK (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-07-18 22:38:35 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 22:38:40 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[35mEntry Load (0.4ms)[0m  SELECT "entries".* FROM "entries" ORDER BY created_at DESC
+  Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 50ms (Views: 48.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-18 22:38:40 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-07-18 22:38:40 -0400
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-07-18 22:38:40 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 22:38:40 -0400
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 22:38:40 -0400
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-07-18 22:38:40 -0400
+Served asset /jquery.masonry.min.js - 200 OK (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-07-18 22:38:40 -0400
+Served asset /entries.js - 200 OK (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-07-18 22:38:40 -0400
+Served asset /masonry.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 22:38:40 -0400
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-07-18 22:38:40 -0400
+Served asset /static_pages.js - 200 OK (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-07-18 22:38:41 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 22:38:57 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries" ORDER BY created_at DESC[0m
+  Rendered static_pages/home.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 105ms (Views: 43.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-18 22:38:57 -0400
+Served asset /application.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-07-18 22:38:57 -0400
+Served asset /entries.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-07-18 22:38:57 -0400
+Served asset /static_pages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 22:38:57 -0400
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 22:38:57 -0400
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-07-18 22:38:57 -0400
+Served asset /entries.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 22:38:57 -0400
+Served asset /application.js - 200 OK (12ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-07-18 22:38:57 -0400
+Served asset /jquery.masonry.min.js - 200 OK (1ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-07-18 22:38:57 -0400
+Served asset /static_pages.js - 200 OK (1ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-07-18 22:38:57 -0400
+Served asset /masonry.js - 200 OK (1ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-07-18 22:38:57 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (2ms)
+
+
+Started GET "/parse" for 127.0.0.1 at 2012-07-18 22:39:02 -0400
+Processing by EntriesController#parse_feed as HTML
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://fffff.at/noisy-typer-a-typewriter-for-your-laptop/' AND "entries"."title" = 'Noisy Typer – a typewriter for your laptop. | F.A.T.' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (7.1ms)[0m  INSERT INTO "entries" ("created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Thu, 19 Jul 2012 02:39:41 UTC +00:00], ["imgurl", nil], ["link", "http://fffff.at/noisy-typer-a-typewriter-for-your-laptop/"], ["title", "Noisy Typer – a typewriter for your laptop. | F.A.T."], ["updated_at", Thu, 19 Jul 2012 02:39:41 UTC +00:00]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://fffff.at/files/2012/07/fatdrone.jpg?e83a2c', "updated_at" = '2012-07-19 02:39:41.983874' WHERE "entries"."id" = 1[0m
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://vimeo.com/41772735' AND "entries"."title" = 'How to Use FF Chartwell on Vimeo' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "entries" ("created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 19 Jul 2012 02:39:41 UTC +00:00], ["imgurl", nil], ["link", "http://vimeo.com/41772735"], ["title", "How to Use FF Chartwell on Vimeo"], ["updated_at", Thu, 19 Jul 2012 02:39:41 UTC +00:00]]
+  [1m[35m (7.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  UPDATE "entries" SET "imgurl" = 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', "updated_at" = '2012-07-19 02:39:41.999956' WHERE "entries"."id" = 2
+  [1m[36m (7.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://pinterest.com/source/uniqlo.com/' AND "entries"."title" = 'Uniqlo / Pinterest' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Thu, 19 Jul 2012 02:39:42 UTC +00:00], ["imgurl", nil], ["link", "http://pinterest.com/source/uniqlo.com/"], ["title", "Uniqlo / Pinterest"], ["updated_at", Thu, 19 Jul 2012 02:39:42 UTC +00:00]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://media-cache-ec0.pinterest.com/upload/224265256414886057_vEIz5Qnp_b.jpg', "updated_at" = '2012-07-19 02:39:42.031085' WHERE "entries"."id" = 3[0m
+  [1m[35m (74.7ms)[0m  commit transaction
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.fastcodesign.com/1670096/create-uis-out-of-anything-with-this-kit-from-mit%231' AND "entries"."title" = 'Create UIs Out of Anything, With This Kit From MIT | Co.Design: business + innovation + design' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 19 Jul 2012 02:39:42 UTC +00:00], ["imgurl", nil], ["link", "http://www.fastcodesign.com/1670096/create-uis-out-of-anything-with-this-kit-from-mit%231"], ["title", "Create UIs Out of Anything, With This Kit From MIT | Co.Design: business + innovation + design"], ["updated_at", Thu, 19 Jul 2012 02:39:42 UTC +00:00]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  UPDATE "entries" SET "imgurl" = 'http://www.fastcodesign.com/multisite_files/codesign/imagecache/slideshow-large/slides/7167033774-b0ccd5566e-b.jpg', "updated_at" = '2012-07-19 02:39:42.123273' WHERE "entries"."id" = 4
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.theverge.com/2012/6/19/3094096/frog-design-android-feel-ux-sharp' AND "entries"."title" = 'Frog redesigns the Android user experience with Feel_UX | The Verge' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "entries" ("created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Thu, 19 Jul 2012 02:39:42 UTC +00:00], ["imgurl", nil], ["link", "http://www.theverge.com/2012/6/19/3094096/frog-design-android-feel-ux-sharp"], ["title", "Frog redesigns the Android user experience with Feel_UX | The Verge"], ["updated_at", Thu, 19 Jul 2012 02:39:42 UTC +00:00]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://cdn2.sbnation.com/entry_photo_images/4386103/DSC04218_large_verge_super_wide.jpg', "updated_at" = '2012-07-19 02:39:42.129913' WHERE "entries"."id" = 5[0m
+  [1m[35m (0.5ms)[0m  commit transaction
+  [1m[36mEntry Load (0.6ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.ustream.tv/channel-popup/Shiba-Inu-Puppy-Cam' AND "entries"."title" = 'Ustream.Tv' LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "entries" ("created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 19 Jul 2012 02:39:42 UTC +00:00], ["imgurl", nil], ["link", "http://www.ustream.tv/channel-popup/Shiba-Inu-Puppy-Cam"], ["title", "Ustream.Tv"], ["updated_at", Thu, 19 Jul 2012 02:39:42 UTC +00:00]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  UPDATE "entries" SET "imgurl" = 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', "updated_at" = '2012-07-19 02:39:42.139868' WHERE "entries"."id" = 6
+  [1m[36m (5.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.pixartouchbook.com/blog/2011/5/15/pixar-story-rules-one-version.html' AND "entries"."title" = 'The Pixar Touch - history of Pixar - Blog - Pixar story rules (one version)' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Thu, 19 Jul 2012 02:39:42 UTC +00:00], ["imgurl", nil], ["link", "http://www.pixartouchbook.com/blog/2011/5/15/pixar-story-rules-one-version.html"], ["title", "The Pixar Touch - history of Pixar - Blog - Pixar story rules (one version)"], ["updated_at", Thu, 19 Jul 2012 02:39:42 UTC +00:00]]
+  [1m[36m (4.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://www.pixartouchbook.com/storage/header-med.jpg', "updated_at" = '2012-07-19 02:39:42.158707' WHERE "entries"."id" = 7[0m
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://live.leapmotion.com/index.html' AND "entries"."title" = 'Leap Motion' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 19 Jul 2012 02:39:42 UTC +00:00], ["imgurl", nil], ["link", "http://live.leapmotion.com/index.html"], ["title", "Leap Motion"], ["updated_at", Thu, 19 Jul 2012 02:39:42 UTC +00:00]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  UPDATE "entries" SET "imgurl" = 'http://c347130.r30.cf1.rackcdn.com/widget2.png', "updated_at" = '2012-07-19 02:39:42.167270' WHERE "entries"."id" = 8
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  Rendered entries/parse_feed.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 40001ms (Views: 12.5ms | ActiveRecord: 129.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-18 22:39:42 -0400
+Served asset /application.css - 200 OK (4ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-07-18 22:39:42 -0400
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-07-18 22:39:42 -0400
+Served asset /entries.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 22:39:42 -0400
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-07-18 22:39:42 -0400
+Served asset /masonry.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-07-18 22:39:42 -0400
+Served asset /jquery.masonry.min.js - 200 OK (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-07-18 22:39:42 -0400
+Served asset /entries.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 22:39:42 -0400
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 22:39:42 -0400
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-07-18 22:39:42 -0400
+Served asset /static_pages.js - 200 OK (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-07-18 22:39:42 -0400
+Served asset /rainbow_bg.png - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 22:39:52 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[35mEntry Load (0.4ms)[0m  SELECT "entries".* FROM "entries" ORDER BY created_at DESC
+  Rendered static_pages/home.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-18 22:39:52 -0400
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-07-18 22:39:52 -0400
+Served asset /entries.css - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-07-18 22:39:52 -0400
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 22:39:52 -0400
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 22:39:52 -0400
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-07-18 22:39:52 -0400
+Served asset /entries.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 22:39:52 -0400
+Served asset /application.js - 200 OK (3ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-07-18 22:39:52 -0400
+Served asset /static_pages.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-07-18 22:39:52 -0400
+Served asset /jquery.masonry.min.js - 200 OK (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-07-18 22:39:52 -0400
+Served asset /masonry.js - 200 OK (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-07-18 22:39:52 -0400
+Served asset /rainbow_bg.png - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 22:44:38 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries" ORDER BY created_at[0m
+  Rendered static_pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 68ms (Views: 56.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-07-18 22:44:38 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 22:44:38 -0400
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 22:44:38 -0400
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-07-18 22:44:38 -0400
+Served asset /entries.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-18 22:44:38 -0400
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-07-18 22:44:38 -0400
+Served asset /entries.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-07-18 22:44:38 -0400
+Served asset /jquery.masonry.min.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 22:44:38 -0400
+Served asset /application.js - 200 OK (2ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-07-18 22:44:38 -0400
+Served asset /static_pages.js - 200 OK (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-07-18 22:44:38 -0400
+Served asset /masonry.js - 200 OK (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-07-18 22:44:38 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 22:45:35 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[35mEntry Load (0.4ms)[0m  SELECT "entries".* FROM "entries" ORDER BY created_at
+  Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-07-18 22:45:35 -0400
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-07-18 22:45:35 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-18 22:45:35 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 22:45:35 -0400
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 22:45:35 -0400
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-07-18 22:45:35 -0400
+Served asset /entries.js - 200 OK (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-07-18 22:45:35 -0400
+Served asset /masonry.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-07-18 22:45:35 -0400
+Served asset /jquery.masonry.min.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 22:45:35 -0400
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-07-18 22:45:35 -0400
+Served asset /static_pages.js - 200 OK (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-07-18 22:45:35 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 22:46:02 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mEntry Load (0.4ms)[0m  [1mSELECT "entries".* FROM "entries" ORDER BY created_at[0m
+  Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-18 22:46:02 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-07-18 22:46:02 -0400
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-07-18 22:46:02 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:02 -0400
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:02 -0400
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:02 -0400
+Served asset /entries.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:02 -0400
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:02 -0400
+Served asset /masonry.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:02 -0400
+Served asset /jquery.masonry.min.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:02 -0400
+Served asset /static_pages.js - 200 OK (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-07-18 22:46:03 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 22:46:26 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mEntry Load (0.3ms)[0m  [1mSELECT "entries".* FROM "entries" ORDER BY created_at[0m
+  Rendered static_pages/home.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 109ms (Views: 73.0ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-07-18 22:46:26 -0400
+Served asset /entries.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-07-18 22:46:26 -0400
+Served asset /static_pages.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:26 -0400
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:26 -0400
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:26 -0400
+Served asset /entries.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:26 -0400
+Served asset /jquery.masonry.min.js - 200 OK (4ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:26 -0400
+Served asset /masonry.js - 200 OK (1ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:26 -0400
+Served asset /static_pages.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:26 -0400
+Served asset /application.js - 200 OK (7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-18 22:46:26 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-07-18 22:46:26 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 22:46:44 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[35mEntry Load (0.3ms)[0m  SELECT "entries".* FROM "entries" ORDER BY created_at
+  Rendered static_pages/home.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-07-18 22:46:44 -0400
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-07-18 22:46:44 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:44 -0400
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:44 -0400
+Served asset /entries.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:44 -0400
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:44 -0400
+Served asset /jquery.masonry.min.js - 200 OK (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:44 -0400
+Served asset /masonry.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:44 -0400
+Served asset /static_pages.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:44 -0400
+Served asset /application.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-18 22:46:44 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-07-18 22:46:44 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 22:46:49 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mEntry Load (0.3ms)[0m  [1mSELECT "entries".* FROM "entries" ORDER BY created_at[0m
+  Rendered static_pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-18 22:46:49 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-07-18 22:46:49 -0400
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-07-18 22:46:49 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:49 -0400
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:49 -0400
+Served asset /entries.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:49 -0400
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:49 -0400
+Served asset /static_pages.js - 200 OK (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:49 -0400
+Served asset /masonry.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:49 -0400
+Served asset /jquery.masonry.min.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:49 -0400
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-07-18 22:46:49 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 22:46:58 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[35mEntry Load (0.6ms)[0m  SELECT "entries".* FROM "entries" ORDER BY created_at DESC
+  Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 24ms (Views: 11.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-18 22:46:59 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-07-18 22:46:59 -0400
+Served asset /entries.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-07-18 22:46:59 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:59 -0400
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:59 -0400
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:59 -0400
+Served asset /entries.js - 200 OK (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:59 -0400
+Served asset /masonry.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:59 -0400
+Served asset /jquery.masonry.min.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:59 -0400
+Served asset /static_pages.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 22:46:59 -0400
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-07-18 22:46:59 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/parse" for 127.0.0.1 at 2012-07-18 22:47:08 -0400
+Processing by EntriesController#parse_feed as HTML
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://fffff.at/noisy-typer-a-typewriter-for-your-laptop/' AND "entries"."title" = 'Noisy Typer – a typewriter for your laptop. | F.A.T.' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (3.6ms)[0m  [1mINSERT INTO "entries" ("created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Thu, 19 Jul 2012 02:47:42 UTC +00:00], ["imgurl", nil], ["link", "http://fffff.at/noisy-typer-a-typewriter-for-your-laptop/"], ["title", "Noisy Typer – a typewriter for your laptop. | F.A.T."], ["updated_at", Thu, 19 Jul 2012 02:47:42 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  UPDATE "entries" SET "imgurl" = 'http://fffff.at/files/2012/07/fatdrone.jpg?e83a2c', "updated_at" = '2012-07-19 02:47:42.815537' WHERE "entries"."id" = 9
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://vimeo.com/41772735' AND "entries"."title" = 'How to Use FF Chartwell on Vimeo' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://pinterest.com/source/uniqlo.com/' AND "entries"."title" = 'Uniqlo / Pinterest' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (6.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.fastcodesign.com/1670096/create-uis-out-of-anything-with-this-kit-from-mit%231' AND "entries"."title" = 'Create UIs Out of Anything, With This Kit From MIT | Co.Design: business + innovation + design' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.theverge.com/2012/6/19/3094096/frog-design-android-feel-ux-sharp' AND "entries"."title" = 'Frog redesigns the Android user experience with Feel_UX | The Verge' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.ustream.tv/channel-popup/Shiba-Inu-Puppy-Cam' AND "entries"."title" = 'Ustream.Tv' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.pixartouchbook.com/blog/2011/5/15/pixar-story-rules-one-version.html' AND "entries"."title" = 'The Pixar Touch - history of Pixar - Blog - Pixar story rules (one version)' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://live.leapmotion.com/index.html' AND "entries"."title" = 'Leap Motion' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  Rendered entries/parse_feed.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 34196ms (Views: 8.9ms | ActiveRecord: 13.3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 22:47:43 -0400
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-07-18 22:47:43 -0400
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-07-18 22:47:43 -0400
+Served asset /entries.css - 200 OK (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-18 22:47:43 -0400
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 22:47:43 -0400
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-07-18 22:47:43 -0400
+Served asset /entries.js - 200 OK (11ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-07-18 22:47:43 -0400
+Served asset /static_pages.js - 200 OK (37ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 22:47:43 -0400
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-07-18 22:47:43 -0400
+Served asset /masonry.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-07-18 22:47:43 -0400
+Served asset /jquery.masonry.min.js - 200 OK (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-07-18 22:47:43 -0400
+Served asset /rainbow_bg.png - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 22:47:45 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mEntry Load (2.3ms)[0m  [1mSELECT "entries".* FROM "entries" ORDER BY created_at DESC[0m
+  Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 11ms (Views: 7.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-07-18 22:47:47 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[35mEntry Load (0.3ms)[0m  SELECT "entries".* FROM "entries" ORDER BY created_at DESC
+  Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-07-18 22:47:47 -0400
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-07-18 22:47:47 -0400
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-07-18 22:47:47 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-07-18 22:47:47 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-07-18 22:47:47 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-07-18 22:47:47 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-07-18 22:47:47 -0400
+Served asset /jquery.masonry.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-07-18 22:47:47 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-07-18 22:47:47 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-07-18 22:47:47 -0400
+Served asset /masonry.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-07-18 22:47:47 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
