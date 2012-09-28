@@ -21,7 +21,9 @@ class EntriesController < ApplicationController
 			
 			if url2.include? 'www.ideo.com' 
 				url2=""
-			 elsif url2 == "http://severe-ocean-8569.herokuapp.com"
+			elsif url2 == "http://severe-ocean-8569.herokuapp.com"
+			 	url2=""
+			elsif url2 == "http://checkitcheckitout.com"
 			 	url2=""
 			else
 				if url2.include? 'https' 
