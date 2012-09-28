@@ -11,6 +11,7 @@ group :development, :test do
   gem 'sqlite3'
 end
 
+gem 'delayed_job_active_record'
 gem 'nokogiri'
 gem 'simple-rss'
 gem 'image_scraper'

@@ -9730,3 +9730,869 @@ Processing by StaticPagesController#home as */*
   [1m[35mEntry Load (0.3ms)[0m  SELECT "entries".* FROM "entries" ORDER BY created_at DESC
   Rendered static_pages/home.html.erb within layouts/application (3.2ms)
 Completed 200 OK in 174ms (Views: 172.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-27 20:26:58 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mEntry Load (0.3ms)[0m  [1mSELECT "entries".* FROM "entries" ORDER BY created_at DESC[0m
+  Rendered static_pages/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 16ms (Views: 5.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-27 20:26:59 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-09-27 20:26:59 -0400
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-27 20:26:59 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-27 20:26:59 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-27 20:26:59 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-09-27 20:26:59 -0400
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-09-27 20:26:59 -0400
+Served asset /masonry.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-09-27 20:26:59 -0400
+Served asset /jquery.masonry.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-27 20:26:59 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-27 20:26:59 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-27 20:26:59 -0400
+Processing by StaticPagesController#home as */*
+  [1m[35mEntry Load (0.5ms)[0m  SELECT "entries".* FROM "entries" ORDER BY created_at DESC
+  Rendered static_pages/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 11ms (Views: 7.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-09-27 20:26:59 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-27 20:30:12 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mEntry Load (0.4ms)[0m  [1mSELECT "entries".* FROM "entries" ORDER BY created_at DESC[0m
+  Rendered static_pages/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-27 20:30:12 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-27 20:30:12 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-09-27 20:30:12 -0400
+Served asset /entries.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-27 20:30:12 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-27 20:30:12 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-09-27 20:30:12 -0400
+Served asset /masonry.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-09-27 20:30:12 -0400
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-09-27 20:30:12 -0400
+Served asset /jquery.masonry.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-27 20:30:12 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-27 20:30:12 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-09-27 20:30:12 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-27 20:30:12 -0400
+Processing by StaticPagesController#home as */*
+  [1m[35mEntry Load (0.4ms)[0m  SELECT "entries".* FROM "entries" ORDER BY created_at DESC
+  Rendered static_pages/home.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/parse" for 127.0.0.1 at 2012-09-27 20:30:14 -0400
+Processing by EntriesController#parse_feed as HTML
+  [1m[36mEntry Load (0.3ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://graphicnovel-hybrid4.peugeot.com/start.html' AND "entries"."title" = 'Peugeot HYbrid4 presents : The hybrid graphic novel' AND "entries"."author" = 'Michael Sy Lee' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://androidniceties.tumblr.com/' AND "entries"."title" = 'Android niceties' AND "entries"."author" = 'Julie Regina' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.youtube.com/watch%3Fv%3D3o6pcbhylmQ%26feature%3Dplayer_embedded%23!' AND "entries"."title" = 'The MakerBot Replicator 2 Desktop 3D Printer - Announcement - YouTube' AND "entries"."author" = 'Julie Regina' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://thenextweb.com/dd/2012/09/09/check-25-sources-great-mobile-design-inspiration/%3Futm_source%3DTwitter%26utm_campaign%3Dsocial%2520media%26utm_medium%3Dshare%2520button%26awesm%3Dtnw.to_c4Xz%26utm_content%3DCheck%2520out%2520these%252025%2520sources%2520of%2520great%2520mobile%2520design%2520inspiration' AND "entries"."title" = 'Where to Find Great Mobile Design Inspiration' AND "entries"."author" = 'David Boardman' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.slideshare.net/nicolasnova/skeuomorphsininteractiondesignornamentoraffordance%3Ffrom%3Dnew_upload_email' AND "entries"."title" = 'http://www.slideshare.net/nicolasnova/skeuomorphsininteractiondesignornamentoraffordance%3Ffrom%3Dnew_upload_email' AND "entries"."author" = 'David Boardman' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://rawkes.com/articles/there-is-something-magical-about-firefox-os' AND "entries"."title" = 'There is something magical about Firefox OS | Rawkes' AND "entries"."author" = 'Julie Regina' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.uxdrinkinggame.com/drink/if-during-your-career-your-title-has-changed-from-ui-to-ia-to-ux-to-id-to-ia-drink/' AND "entries"."title" = 'If during your career, your title has changed from UI to IA to UX to ID to IA, drink' AND "entries"."author" = 'Julie Regina' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.cooper.com/journal/2012/08/the-best-interface-is-no-interface.html/' AND "entries"."title" = '
+ 					The Cooper Journal: The best interface is no interface			 ' AND "entries"."author" = 'Julie Regina' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.densitydesign.org/2012/09/visualizing-nyc/' AND "entries"."title" = 'Density Design | Visualizing NYC' AND "entries"."author" = 'David Boardman' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://envisioningtech.com/envisioning-the-smartphone-of-the-future/' AND "entries"."title" = 'The Smartphone of the Future – an Explosive Wealth of Possibilities | Envisioning Technology' AND "entries"."author" = 'David Boardman' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://blog.visual.ly/interaction-design-for-data-visualizations/' AND "entries"."title" = 'Interaction Design for Data Visualizations | Visual.ly Blog' AND "entries"."author" = 'David Boardman' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://vimeo.com/46304267' AND "entries"."title" = 'Sight on Vimeo' AND "entries"."author" = 'Christian Palino' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://vimeo.com/45417241' AND "entries"."title" = 'The V Motion Project on Vimeo' AND "entries"."author" = 'David Boardman' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://fffff.at/noisy-typer-a-typewriter-for-your-laptop/' AND "entries"."title" = 'Noisy Typer – a typewriter for your laptop. | F.A.T.' AND "entries"."author" = 'David Boardman' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://vimeo.com/41772735' AND "entries"."title" = 'How to Use FF Chartwell on Vimeo' AND "entries"."author" = 'Vivian Lo' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://pinterest.com/source/uniqlo.com/' AND "entries"."title" = 'Uniqlo / Pinterest' AND "entries"."author" = 'Julie Regina' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.fastcodesign.com/1670096/create-uis-out-of-anything-with-this-kit-from-mit%231' AND "entries"."title" = 'Create UIs Out of Anything, With This Kit From MIT | Co.Design: business + innovation + design' AND "entries"."author" = 'Junu Yang' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.theverge.com/2012/6/19/3094096/frog-design-android-feel-ux-sharp' AND "entries"."title" = 'Frog redesigns the Android user experience with Feel_UX | The Verge' AND "entries"."author" = 'Julie Regina' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.ustream.tv/channel-popup/Shiba-Inu-Puppy-Cam' AND "entries"."title" = 'Ustream.Tv' AND "entries"."author" = 'Junu Yang' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.pixartouchbook.com/blog/2011/5/15/pixar-story-rules-one-version.html' AND "entries"."title" = 'The Pixar Touch - history of Pixar - Blog - Pixar story rules (one version)' AND "entries"."author" = 'Jackie Steck' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'https://live.leapmotion.com/index.html' AND "entries"."title" = 'https://live.leapmotion.com/index.html' AND "entries"."author" = 'Julie Regina' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  Rendered entries/parse_feed.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 76914ms (Views: 4.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-09-27 20:31:31 -0400
+Served asset /entries.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-27 20:31:31 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-27 20:31:31 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-27 20:31:31 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-27 20:31:31 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-09-27 20:31:31 -0400
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-09-27 20:31:31 -0400
+Served asset /jquery.masonry.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-09-27 20:31:31 -0400
+Served asset /masonry.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-27 20:31:32 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-27 20:31:32 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-09-27 20:31:32 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-27 20:31:35 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[35mEntry Load (0.4ms)[0m  SELECT "entries".* FROM "entries" ORDER BY created_at DESC
+  Rendered static_pages/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-27 20:31:35 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-09-27 20:31:35 -0400
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-27 20:31:35 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-27 20:31:35 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-27 20:31:35 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-09-27 20:31:35 -0400
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-09-27 20:31:35 -0400
+Served asset /jquery.masonry.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-09-27 20:31:35 -0400
+Served asset /masonry.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-27 20:31:35 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-27 20:31:35 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-27 20:31:35 -0400
+Processing by StaticPagesController#home as */*
+  [1m[36mEntry Load (0.3ms)[0m  [1mSELECT "entries".* FROM "entries" ORDER BY created_at DESC[0m
+  Rendered static_pages/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/parse" for 127.0.0.1 at 2012-09-27 20:35:05 -0400
+Processing by EntriesController#parse_feed as HTML
+Completed 500 Internal Server Error in 4987ms
+
+OpenURI::HTTPError (404 Not Found):
+  app/controllers/entries_controller.rb:59:in `block in scrape_links'
+  app/controllers/entries_controller.rb:55:in `each'
+  app/controllers/entries_controller.rb:55:in `scrape_links'
+  app/controllers/entries_controller.rb:50:in `parse_feed'
+
+
+  Rendered /Users/jyang/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.2ms)
+  Rendered /Users/jyang/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/jyang/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.4ms)
+
+
+Started GET "/parse" for 127.0.0.1 at 2012-09-27 20:35:23 -0400
+Processing by EntriesController#parse_feed as HTML
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://graphicnovel-hybrid4.peugeot.com/start.html' AND "entries"."title" = 'Peugeot HYbrid4 presents : The hybrid graphic novel' AND "entries"."author" = 'Michael Sy Lee' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://androidniceties.tumblr.com/' AND "entries"."title" = 'Android niceties' AND "entries"."author" = 'Julie Regina' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.youtube.com/watch%3Fv%3D3o6pcbhylmQ%26feature%3Dplayer_embedded%23!' AND "entries"."title" = 'The MakerBot Replicator 2 Desktop 3D Printer - Announcement - YouTube' AND "entries"."author" = 'Julie Regina' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://thenextweb.com/dd/2012/09/09/check-25-sources-great-mobile-design-inspiration/%3Futm_source%3DTwitter%26utm_campaign%3Dsocial%2520media%26utm_medium%3Dshare%2520button%26awesm%3Dtnw.to_c4Xz%26utm_content%3DCheck%2520out%2520these%252025%2520sources%2520of%2520great%2520mobile%2520design%2520inspiration' AND "entries"."title" = 'Where to Find Great Mobile Design Inspiration' AND "entries"."author" = 'David Boardman' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.slideshare.net/nicolasnova/skeuomorphsininteractiondesignornamentoraffordance%3Ffrom%3Dnew_upload_email' AND "entries"."title" = 'http://www.slideshare.net/nicolasnova/skeuomorphsininteractiondesignornamentoraffordance%3Ffrom%3Dnew_upload_email' AND "entries"."author" = 'David Boardman' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://rawkes.com/articles/there-is-something-magical-about-firefox-os' AND "entries"."title" = 'There is something magical about Firefox OS | Rawkes' AND "entries"."author" = 'Julie Regina' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.uxdrinkinggame.com/drink/if-during-your-career-your-title-has-changed-from-ui-to-ia-to-ux-to-id-to-ia-drink/' AND "entries"."title" = 'If during your career, your title has changed from UI to IA to UX to ID to IA, drink' AND "entries"."author" = 'Julie Regina' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.cooper.com/journal/2012/08/the-best-interface-is-no-interface.html/' AND "entries"."title" = '
+ 					The Cooper Journal: The best interface is no interface			 ' AND "entries"."author" = 'Julie Regina' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.densitydesign.org/2012/09/visualizing-nyc/' AND "entries"."title" = 'Density Design | Visualizing NYC' AND "entries"."author" = 'David Boardman' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://envisioningtech.com/envisioning-the-smartphone-of-the-future/' AND "entries"."title" = 'The Smartphone of the Future – an Explosive Wealth of Possibilities | Envisioning Technology' AND "entries"."author" = 'David Boardman' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://blog.visual.ly/interaction-design-for-data-visualizations/' AND "entries"."title" = 'Interaction Design for Data Visualizations | Visual.ly Blog' AND "entries"."author" = 'David Boardman' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://vimeo.com/46304267' AND "entries"."title" = 'Sight on Vimeo' AND "entries"."author" = 'Christian Palino' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://vimeo.com/45417241' AND "entries"."title" = 'The V Motion Project on Vimeo' AND "entries"."author" = 'David Boardman' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://fffff.at/noisy-typer-a-typewriter-for-your-laptop/' AND "entries"."title" = 'Noisy Typer – a typewriter for your laptop. | F.A.T.' AND "entries"."author" = 'David Boardman' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://vimeo.com/41772735' AND "entries"."title" = 'How to Use FF Chartwell on Vimeo' AND "entries"."author" = 'Vivian Lo' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://pinterest.com/source/uniqlo.com/' AND "entries"."title" = 'Uniqlo / Pinterest' AND "entries"."author" = 'Julie Regina' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.fastcodesign.com/1670096/create-uis-out-of-anything-with-this-kit-from-mit%231' AND "entries"."title" = 'Create UIs Out of Anything, With This Kit From MIT | Co.Design: business + innovation + design' AND "entries"."author" = 'Junu Yang' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.theverge.com/2012/6/19/3094096/frog-design-android-feel-ux-sharp' AND "entries"."title" = 'Frog redesigns the Android user experience with Feel_UX | The Verge' AND "entries"."author" = 'Julie Regina' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.ustream.tv/channel-popup/Shiba-Inu-Puppy-Cam' AND "entries"."title" = 'Ustream.Tv' AND "entries"."author" = 'Junu Yang' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.pixartouchbook.com/blog/2011/5/15/pixar-story-rules-one-version.html' AND "entries"."title" = 'The Pixar Touch - history of Pixar - Blog - Pixar story rules (one version)' AND "entries"."author" = 'Jackie Steck' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'https://live.leapmotion.com/index.html' AND "entries"."title" = 'https://live.leapmotion.com/index.html' AND "entries"."author" = 'Julie Regina' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  Rendered entries/parse_feed.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 70949ms (Views: 4.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-27 20:36:34 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-09-27 20:36:34 -0400
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-27 20:36:34 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-27 20:36:34 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-27 20:36:34 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-09-27 20:36:34 -0400
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-09-27 20:36:34 -0400
+Served asset /jquery.masonry.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-09-27 20:36:34 -0400
+Served asset /masonry.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-27 20:36:34 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-27 20:36:34 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-09-27 20:36:34 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-27 20:38:43 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mEntry Load (0.3ms)[0m  [1mSELECT "entries".* FROM "entries" ORDER BY created_at DESC[0m
+  Rendered static_pages/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-27 20:38:43 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-09-27 20:38:43 -0400
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-27 20:38:44 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-27 20:38:44 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-27 20:38:44 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-09-27 20:38:44 -0400
+Served asset /jquery.masonry.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-09-27 20:38:44 -0400
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-09-27 20:38:44 -0400
+Served asset /masonry.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-27 20:38:44 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-27 20:38:44 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-27 20:38:44 -0400
+Processing by StaticPagesController#home as */*
+  [1m[35mEntry Load (0.3ms)[0m  SELECT "entries".* FROM "entries" ORDER BY created_at DESC
+  Rendered static_pages/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateEntries (20120619163928)
+Migrating to AddAuthorToEntry (20120927222051)
+Migrating to CreateDelayedJobs (20120928165912)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "delayed_jobs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "priority" integer DEFAULT 0, "attempts" integer DEFAULT 0, "handler" text, "last_error" text, "run_at" datetime, "locked_at" datetime, "failed_at" datetime, "locked_by" varchar(255), "queue" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("delayed_jobs")[0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "delayed_jobs_priority" ON "delayed_jobs" ("priority", "run_at")
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120928165912')[0m
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("delayed_jobs")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('delayed_jobs_priority')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("entries")[0m
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-28 13:07:03 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries" ORDER BY created_at DESC[0m
+  Rendered static_pages/home.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 16ms (Views: 7.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-28 13:07:03 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-28 13:07:03 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-09-28 13:07:03 -0400
+Served asset /entries.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-28 13:07:03 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-28 13:07:03 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-09-28 13:07:03 -0400
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-09-28 13:07:03 -0400
+Served asset /jquery.masonry.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-09-28 13:07:03 -0400
+Served asset /masonry.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-28 13:07:03 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-28 13:07:03 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-28 13:07:03 -0400
+Processing by StaticPagesController#home as */*
+  [1m[35mEntry Load (0.3ms)[0m  SELECT "entries".* FROM "entries" ORDER BY created_at DESC
+  Rendered static_pages/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 32ms (Views: 29.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-09-28 13:07:03 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/parse" for 127.0.0.1 at 2012-09-28 13:07:06 -0400
+Processing by EntriesController#parse_feed as HTML
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://graphicnovel-hybrid4.peugeot.com/start.html' AND "entries"."title" = 'Peugeot HYbrid4 presents : The hybrid graphic novel' AND "entries"."author" = 'Michael Sy Lee' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', "updated_at" = '2012-09-28 17:08:30.056642' WHERE "entries"."id" = 1[0m
+  [1m[35m (19.0ms)[0m  commit transaction
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://androidniceties.tumblr.com/' AND "entries"."title" = 'Android niceties' AND "entries"."author" = 'Julie Regina' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', "updated_at" = '2012-09-28 17:08:30.077985' WHERE "entries"."id" = 2[0m
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.youtube.com/watch%3Fv%3D3o6pcbhylmQ%26feature%3Dplayer_embedded%23!' AND "entries"."title" = 'The MakerBot Replicator 2 Desktop 3D Printer - Announcement - YouTube' AND "entries"."author" = 'Julie Regina' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "entries" SET "imgurl" = NULL, "updated_at" = '2012-09-28 17:08:30.081236' WHERE "entries"."id" = 3[0m
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://thenextweb.com/dd/2012/09/09/check-25-sources-great-mobile-design-inspiration/%3Futm_source%3DTwitter%26utm_campaign%3Dsocial%2520media%26utm_medium%3Dshare%2520button%26awesm%3Dtnw.to_c4Xz%26utm_content%3DCheck%2520out%2520these%252025%2520sources%2520of%2520great%2520mobile%2520design%2520inspiration' AND "entries"."title" = 'Where to Find Great Mobile Design Inspiration' AND "entries"."author" = 'David Boardman' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://24.media.tumblr.com/tumblr_mb0bk0aznR1r2wjwko1_500.png', "updated_at" = '2012-09-28 17:08:30.083922' WHERE "entries"."id" = 4[0m
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.slideshare.net/nicolasnova/skeuomorphsininteractiondesignornamentoraffordance%3Ffrom%3Dnew_upload_email' AND "entries"."title" = 'http://www.slideshare.net/nicolasnova/skeuomorphsininteractiondesignornamentoraffordance%3Ffrom%3Dnew_upload_email' AND "entries"."author" = 'David Boardman' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://s.ytimg.com/yt/img/no_videos_140-vfl5AhOQY.png', "updated_at" = '2012-09-28 17:08:30.086650' WHERE "entries"."id" = 5[0m
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://rawkes.com/articles/there-is-something-magical-about-firefox-os' AND "entries"."title" = 'There is something magical about Firefox OS | Rawkes' AND "entries"."author" = 'Julie Regina' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://cdn.thenextweb.com/wp-content/blogs.dir/1/files/2012/09/iphone-5-hand.jpg', "updated_at" = '2012-09-28 17:08:30.089560' WHERE "entries"."id" = 6[0m
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.uxdrinkinggame.com/drink/if-during-your-career-your-title-has-changed-from-ui-to-ia-to-ux-to-id-to-ia-drink/' AND "entries"."title" = 'If during your career, your title has changed from UI to IA to UX to ID to IA, drink' AND "entries"."author" = 'Julie Regina' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mUPDATE "entries" SET "imgurl" = NULL, "updated_at" = '2012-09-28 17:08:30.092625' WHERE "entries"."id" = 7[0m
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.cooper.com/journal/2012/08/the-best-interface-is-no-interface.html/' AND "entries"."title" = '
+ 					The Cooper Journal: The best interface is no interface			 ' AND "entries"."author" = 'Julie Regina' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://farm9.staticflickr.com/8456/7980043535_c6a39de9c8_o.jpg', "updated_at" = '2012-09-28 17:08:30.095553' WHERE "entries"."id" = 8[0m
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.densitydesign.org/2012/09/visualizing-nyc/' AND "entries"."title" = 'Density Design | Visualizing NYC' AND "entries"."author" = 'David Boardman' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', "updated_at" = '2012-09-28 17:08:30.098822' WHERE "entries"."id" = 9[0m
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://envisioningtech.com/envisioning-the-smartphone-of-the-future/' AND "entries"."title" = 'The Smartphone of the Future – an Explosive Wealth of Possibilities | Envisioning Technology' AND "entries"."author" = 'David Boardman' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://www.cooper.com/wp-content/uploads/2012/08/uisystems_goldenkrishna.png', "updated_at" = '2012-09-28 17:08:30.101726' WHERE "entries"."id" = 10[0m
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://blog.visual.ly/interaction-design-for-data-visualizations/' AND "entries"."title" = 'Interaction Design for Data Visualizations | Visual.ly Blog' AND "entries"."author" = 'David Boardman' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://www.densitydesign.org/wp-content/uploads/2012/09/Schermata-09-2456176-alle-16.21.21.png', "updated_at" = '2012-09-28 17:08:30.104790' WHERE "entries"."id" = 11[0m
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://vimeo.com/46304267' AND "entries"."title" = 'Sight on Vimeo' AND "entries"."author" = 'Christian Palino' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://envisioningtech.com/wp/wp-content/uploads/2012/08/comparing-02.png', "updated_at" = '2012-09-28 17:08:30.108362' WHERE "entries"."id" = 12[0m
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://vimeo.com/45417241' AND "entries"."title" = 'The V Motion Project on Vimeo' AND "entries"."author" = 'David Boardman' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://blog.visual.ly/wp-content/uploads/2012/07/xhuffingtonpost_us_election_2012.png,q547b7b.pagespeed.ic.-3WGnnJaZM.png', "updated_at" = '2012-09-28 17:08:30.111400' WHERE "entries"."id" = 13[0m
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://fffff.at/noisy-typer-a-typewriter-for-your-laptop/' AND "entries"."title" = 'Noisy Typer – a typewriter for your laptop. | F.A.T.' AND "entries"."author" = 'David Boardman' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', "updated_at" = '2012-09-28 17:08:30.114297' WHERE "entries"."id" = 14[0m
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://vimeo.com/41772735' AND "entries"."title" = 'How to Use FF Chartwell on Vimeo' AND "entries"."author" = 'Vivian Lo' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://pinterest.com/source/uniqlo.com/' AND "entries"."title" = 'Uniqlo / Pinterest' AND "entries"."author" = 'Julie Regina' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  UPDATE "entries" SET "imgurl" = 'http://fffff.at/files/2012/08/pussyfatbanner-color.jpg?e83a2c', "updated_at" = '2012-09-28 17:08:30.118453' WHERE "entries"."id" = 16
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.fastcodesign.com/1670096/create-uis-out-of-anything-with-this-kit-from-mit%231' AND "entries"."title" = 'Create UIs Out of Anything, With This Kit From MIT | Co.Design: business + innovation + design' AND "entries"."author" = 'Junu Yang' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  UPDATE "entries" SET "imgurl" = 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', "updated_at" = '2012-09-28 17:08:30.121158' WHERE "entries"."id" = 17
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.theverge.com/2012/6/19/3094096/frog-design-android-feel-ux-sharp' AND "entries"."title" = 'Frog redesigns the Android user experience with Feel_UX | The Verge' AND "entries"."author" = 'Julie Regina' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  UPDATE "entries" SET "imgurl" = 'http://media-cache-ec4.pinterest.com/upload/184506915955148364_3NZvqTju_b.jpg', "updated_at" = '2012-09-28 17:08:30.123874' WHERE "entries"."id" = 18
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.ustream.tv/channel-popup/Shiba-Inu-Puppy-Cam' AND "entries"."title" = 'Ustream.Tv' AND "entries"."author" = 'Junu Yang' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  UPDATE "entries" SET "imgurl" = 'http://www.fastcodesign.com/multisite_files/codesign/imagecache/slideshow-large/slides/7167033774-b0ccd5566e-b.jpg', "updated_at" = '2012-09-28 17:08:30.126556' WHERE "entries"."id" = 19
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.pixartouchbook.com/blog/2011/5/15/pixar-story-rules-one-version.html' AND "entries"."title" = 'The Pixar Touch - history of Pixar - Blog - Pixar story rules (one version)' AND "entries"."author" = 'Jackie Steck' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  UPDATE "entries" SET "imgurl" = 'http://cdn2.sbnation.com/entry_photo_images/4386103/DSC04218_large_verge_super_wide.jpg', "updated_at" = '2012-09-28 17:08:30.129717' WHERE "entries"."id" = 20
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'https://live.leapmotion.com/index.html' AND "entries"."title" = 'https://live.leapmotion.com/index.html' AND "entries"."author" = 'Julie Regina' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  UPDATE "entries" SET "imgurl" = 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', "updated_at" = '2012-09-28 17:08:30.132738' WHERE "entries"."id" = 21
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  Rendered entries/parse_feed.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 83331ms (Views: 7.5ms | ActiveRecord: 55.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-28 13:08:30 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-28 13:08:30 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-09-28 13:08:30 -0400
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-28 13:08:30 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-09-28 13:08:30 -0400
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-28 13:08:30 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-09-28 13:08:30 -0400
+Served asset /jquery.masonry.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-09-28 13:08:30 -0400
+Served asset /masonry.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-28 13:08:30 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-28 13:08:30 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-09-28 13:08:30 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-28 13:18:30 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[35mEntry Load (0.3ms)[0m  SELECT "entries".* FROM "entries" ORDER BY created_at DESC
+  Rendered static_pages/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-09-28 13:18:30 -0400
+Served asset /entries.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-28 13:18:30 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-28 13:18:30 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-09-28 13:18:30 -0400
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-28 13:18:30 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-28 13:18:30 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-09-28 13:18:30 -0400
+Served asset /jquery.masonry.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-09-28 13:18:30 -0400
+Served asset /masonry.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-28 13:18:30 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-28 13:18:30 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-09-28 13:18:30 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-28 13:18:30 -0400
+Processing by StaticPagesController#home as */*
+  [1m[36mEntry Load (0.4ms)[0m  [1mSELECT "entries".* FROM "entries" ORDER BY created_at DESC[0m
+  Rendered static_pages/home.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateEntries (20120619163928)
+Migrating to AddAuthorToEntry (20120927222051)
+Migrating to CreateDelayedJobs (20120928165912)
+Migrating to ChangeStringToText (20120928172409)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateEntries (20120619163928)
+Migrating to AddAuthorToEntry (20120927222051)
+Migrating to CreateDelayedJobs (20120928165912)
+Migrating to ChangeStringToText (20120928172409)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TEMPORARY TABLE "altered_entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "link" varchar(255), "imgurl" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "author" varchar(255)) 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("entries")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "entries"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "altered_entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (1, 'Peugeot HYbrid4 presents : The hybrid graphic novel', 'http://graphicnovel-hybrid4.peugeot.com/start.html', 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', '2012-09-27 22:39:21.157321', '2012-09-28 17:08:30.056642', 'Michael Sy Lee')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (2, 'Android niceties', 'http://androidniceties.tumblr.com/', 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', '2012-09-27 22:39:21.350416', '2012-09-28 17:08:30.077985', 'Julie Regina')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (3, 'The MakerBot Replicator 2 Desktop 3D Printer - Announcement - YouTube', 'http://www.youtube.com/watch%3Fv%3D3o6pcbhylmQ%26feature%3Dplayer_embedded%23!', NULL, '2012-09-27 22:39:21.854974', '2012-09-28 17:08:30.081236', 'Julie Regina')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (4, 'Where to Find Great Mobile Design Inspiration', 'http://thenextweb.com/dd/2012/09/09/check-25-sources-great-mobile-design-inspiration/%3Futm_source%3DTwitter%26utm_campaign%3Dsocial%2520media%26utm_medium%3Dshare%2520button%26awesm%3Dtnw.to_c4Xz%26utm_content%3DCheck%2520out%2520these%252025%2520sources%2520of%2520great%2520mobile%2520design%2520inspiration', 'http://24.media.tumblr.com/tumblr_mb0bk0aznR1r2wjwko1_500.png', '2012-09-27 22:39:22.099147', '2012-09-28 17:08:30.083922', 'David Boardman')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (5, 'http://www.slideshare.net/nicolasnova/skeuomorphsininteractiondesignornamentoraffordance%3Ffrom%3Dnew_upload_email', 'http://www.slideshare.net/nicolasnova/skeuomorphsininteractiondesignornamentoraffordance%3Ffrom%3Dnew_upload_email', 'http://s.ytimg.com/yt/img/no_videos_140-vfl5AhOQY.png', '2012-09-27 22:39:22.394090', '2012-09-28 17:08:30.086650', 'David Boardman')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (6, 'There is something magical about Firefox OS | Rawkes', 'http://rawkes.com/articles/there-is-something-magical-about-firefox-os', 'http://cdn.thenextweb.com/wp-content/blogs.dir/1/files/2012/09/iphone-5-hand.jpg', '2012-09-27 22:39:22.494241', '2012-09-28 17:08:30.089560', 'Julie Regina')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (7, 'If during your career, your title has changed from UI to IA to UX to ID to IA, drink', 'http://www.uxdrinkinggame.com/drink/if-during-your-career-your-title-has-changed-from-ui-to-ia-to-ux-to-id-to-ia-drink/', NULL, '2012-09-27 22:39:22.770708', '2012-09-28 17:08:30.092625', 'Julie Regina')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "altered_entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (8, '
+ 					The Cooper Journal: The best interface is no interface			 ', 'http://www.cooper.com/journal/2012/08/the-best-interface-is-no-interface.html/', 'http://farm9.staticflickr.com/8456/7980043535_c6a39de9c8_o.jpg', '2012-09-27 22:39:22.833903', '2012-09-28 17:08:30.095553', 'Julie Regina')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (9, 'Density Design | Visualizing NYC', 'http://www.densitydesign.org/2012/09/visualizing-nyc/', 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', '2012-09-27 22:39:22.839335', '2012-09-28 17:08:30.098822', 'David Boardman')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (10, 'The Smartphone of the Future – an Explosive Wealth of Possibilities | Envisioning Technology', 'http://envisioningtech.com/envisioning-the-smartphone-of-the-future/', 'http://www.cooper.com/wp-content/uploads/2012/08/uisystems_goldenkrishna.png', '2012-09-27 22:39:22.910681', '2012-09-28 17:08:30.101726', 'David Boardman')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (11, 'Interaction Design for Data Visualizations | Visual.ly Blog', 'http://blog.visual.ly/interaction-design-for-data-visualizations/', 'http://www.densitydesign.org/wp-content/uploads/2012/09/Schermata-09-2456176-alle-16.21.21.png', '2012-09-27 22:39:22.930788', '2012-09-28 17:08:30.104790', 'David Boardman')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (12, 'Sight on Vimeo', 'http://vimeo.com/46304267', 'http://envisioningtech.com/wp/wp-content/uploads/2012/08/comparing-02.png', '2012-09-27 22:39:22.936937', '2012-09-28 17:08:30.108362', 'Christian Palino')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (13, 'The V Motion Project on Vimeo', 'http://vimeo.com/45417241', 'http://blog.visual.ly/wp-content/uploads/2012/07/xhuffingtonpost_us_election_2012.png,q547b7b.pagespeed.ic.-3WGnnJaZM.png', '2012-09-27 22:39:23.065859', '2012-09-28 17:08:30.111400', 'David Boardman')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (14, 'Noisy Typer – a typewriter for your laptop. | F.A.T.', 'http://fffff.at/noisy-typer-a-typewriter-for-your-laptop/', 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', '2012-09-27 22:39:23.158566', '2012-09-28 17:08:30.114297', 'David Boardman')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (15, 'How to Use FF Chartwell on Vimeo', 'http://vimeo.com/41772735', 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', '2012-09-27 22:39:23.256521', '2012-09-27 22:39:23.289834', 'Vivian Lo')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (16, 'Uniqlo / Pinterest', 'http://pinterest.com/source/uniqlo.com/', 'http://fffff.at/files/2012/08/pussyfatbanner-color.jpg?e83a2c', '2012-09-27 22:39:23.449013', '2012-09-28 17:08:30.118453', 'Julie Regina')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (17, 'Create UIs Out of Anything, With This Kit From MIT | Co.Design: business + innovation + design', 'http://www.fastcodesign.com/1670096/create-uis-out-of-anything-with-this-kit-from-mit%231', 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', '2012-09-27 22:39:23.458971', '2012-09-28 17:08:30.121158', 'Junu Yang')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (18, 'Frog redesigns the Android user experience with Feel_UX | The Verge', 'http://www.theverge.com/2012/6/19/3094096/frog-design-android-feel-ux-sharp', 'http://media-cache-ec4.pinterest.com/upload/184506915955148364_3NZvqTju_b.jpg', '2012-09-27 22:39:23.466450', '2012-09-28 17:08:30.123874', 'Julie Regina')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (19, 'Ustream.Tv', 'http://www.ustream.tv/channel-popup/Shiba-Inu-Puppy-Cam', 'http://www.fastcodesign.com/multisite_files/codesign/imagecache/slideshow-large/slides/7167033774-b0ccd5566e-b.jpg', '2012-09-27 22:39:23.533835', '2012-09-28 17:08:30.126556', 'Junu Yang')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (20, 'The Pixar Touch - history of Pixar - Blog - Pixar story rules (one version)', 'http://www.pixartouchbook.com/blog/2011/5/15/pixar-story-rules-one-version.html', 'http://cdn2.sbnation.com/entry_photo_images/4386103/DSC04218_large_verge_super_wide.jpg', '2012-09-27 22:39:23.565809', '2012-09-28 17:08:30.129717', 'Jackie Steck')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (21, 'https://live.leapmotion.com/index.html', 'https://live.leapmotion.com/index.html', 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', '2012-09-27 22:39:23.622753', '2012-09-28 17:08:30.132738', 'Julie Regina')[0m
+  [1m[35m (7.4ms)[0m  DROP TABLE "entries"
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "link" varchar(255), "imgurl" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "author" varchar(255)) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("altered_entries")
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "altered_entries"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (1, 'Peugeot HYbrid4 presents : The hybrid graphic novel', 'http://graphicnovel-hybrid4.peugeot.com/start.html', 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', '2012-09-27 22:39:21.157321', '2012-09-28 17:08:30.056642', 'Michael Sy Lee')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (2, 'Android niceties', 'http://androidniceties.tumblr.com/', 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', '2012-09-27 22:39:21.350416', '2012-09-28 17:08:30.077985', 'Julie Regina')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (3, 'The MakerBot Replicator 2 Desktop 3D Printer - Announcement - YouTube', 'http://www.youtube.com/watch%3Fv%3D3o6pcbhylmQ%26feature%3Dplayer_embedded%23!', NULL, '2012-09-27 22:39:21.854974', '2012-09-28 17:08:30.081236', 'Julie Regina')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (4, 'Where to Find Great Mobile Design Inspiration', 'http://thenextweb.com/dd/2012/09/09/check-25-sources-great-mobile-design-inspiration/%3Futm_source%3DTwitter%26utm_campaign%3Dsocial%2520media%26utm_medium%3Dshare%2520button%26awesm%3Dtnw.to_c4Xz%26utm_content%3DCheck%2520out%2520these%252025%2520sources%2520of%2520great%2520mobile%2520design%2520inspiration', 'http://24.media.tumblr.com/tumblr_mb0bk0aznR1r2wjwko1_500.png', '2012-09-27 22:39:22.099147', '2012-09-28 17:08:30.083922', 'David Boardman')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (5, 'http://www.slideshare.net/nicolasnova/skeuomorphsininteractiondesignornamentoraffordance%3Ffrom%3Dnew_upload_email', 'http://www.slideshare.net/nicolasnova/skeuomorphsininteractiondesignornamentoraffordance%3Ffrom%3Dnew_upload_email', 'http://s.ytimg.com/yt/img/no_videos_140-vfl5AhOQY.png', '2012-09-27 22:39:22.394090', '2012-09-28 17:08:30.086650', 'David Boardman')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (6, 'There is something magical about Firefox OS | Rawkes', 'http://rawkes.com/articles/there-is-something-magical-about-firefox-os', 'http://cdn.thenextweb.com/wp-content/blogs.dir/1/files/2012/09/iphone-5-hand.jpg', '2012-09-27 22:39:22.494241', '2012-09-28 17:08:30.089560', 'Julie Regina')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (7, 'If during your career, your title has changed from UI to IA to UX to ID to IA, drink', 'http://www.uxdrinkinggame.com/drink/if-during-your-career-your-title-has-changed-from-ui-to-ia-to-ux-to-id-to-ia-drink/', NULL, '2012-09-27 22:39:22.770708', '2012-09-28 17:08:30.092625', 'Julie Regina')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (8, '
+ 					The Cooper Journal: The best interface is no interface			 ', 'http://www.cooper.com/journal/2012/08/the-best-interface-is-no-interface.html/', 'http://farm9.staticflickr.com/8456/7980043535_c6a39de9c8_o.jpg', '2012-09-27 22:39:22.833903', '2012-09-28 17:08:30.095553', 'Julie Regina')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (9, 'Density Design | Visualizing NYC', 'http://www.densitydesign.org/2012/09/visualizing-nyc/', 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', '2012-09-27 22:39:22.839335', '2012-09-28 17:08:30.098822', 'David Boardman')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (10, 'The Smartphone of the Future – an Explosive Wealth of Possibilities | Envisioning Technology', 'http://envisioningtech.com/envisioning-the-smartphone-of-the-future/', 'http://www.cooper.com/wp-content/uploads/2012/08/uisystems_goldenkrishna.png', '2012-09-27 22:39:22.910681', '2012-09-28 17:08:30.101726', 'David Boardman')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (11, 'Interaction Design for Data Visualizations | Visual.ly Blog', 'http://blog.visual.ly/interaction-design-for-data-visualizations/', 'http://www.densitydesign.org/wp-content/uploads/2012/09/Schermata-09-2456176-alle-16.21.21.png', '2012-09-27 22:39:22.930788', '2012-09-28 17:08:30.104790', 'David Boardman')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (12, 'Sight on Vimeo', 'http://vimeo.com/46304267', 'http://envisioningtech.com/wp/wp-content/uploads/2012/08/comparing-02.png', '2012-09-27 22:39:22.936937', '2012-09-28 17:08:30.108362', 'Christian Palino')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (13, 'The V Motion Project on Vimeo', 'http://vimeo.com/45417241', 'http://blog.visual.ly/wp-content/uploads/2012/07/xhuffingtonpost_us_election_2012.png,q547b7b.pagespeed.ic.-3WGnnJaZM.png', '2012-09-27 22:39:23.065859', '2012-09-28 17:08:30.111400', 'David Boardman')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (14, 'Noisy Typer – a typewriter for your laptop. | F.A.T.', 'http://fffff.at/noisy-typer-a-typewriter-for-your-laptop/', 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', '2012-09-27 22:39:23.158566', '2012-09-28 17:08:30.114297', 'David Boardman')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (15, 'How to Use FF Chartwell on Vimeo', 'http://vimeo.com/41772735', 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', '2012-09-27 22:39:23.256521', '2012-09-27 22:39:23.289834', 'Vivian Lo')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (16, 'Uniqlo / Pinterest', 'http://pinterest.com/source/uniqlo.com/', 'http://fffff.at/files/2012/08/pussyfatbanner-color.jpg?e83a2c', '2012-09-27 22:39:23.449013', '2012-09-28 17:08:30.118453', 'Julie Regina')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (17, 'Create UIs Out of Anything, With This Kit From MIT | Co.Design: business + innovation + design', 'http://www.fastcodesign.com/1670096/create-uis-out-of-anything-with-this-kit-from-mit%231', 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', '2012-09-27 22:39:23.458971', '2012-09-28 17:08:30.121158', 'Junu Yang')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (18, 'Frog redesigns the Android user experience with Feel_UX | The Verge', 'http://www.theverge.com/2012/6/19/3094096/frog-design-android-feel-ux-sharp', 'http://media-cache-ec4.pinterest.com/upload/184506915955148364_3NZvqTju_b.jpg', '2012-09-27 22:39:23.466450', '2012-09-28 17:08:30.123874', 'Julie Regina')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (19, 'Ustream.Tv', 'http://www.ustream.tv/channel-popup/Shiba-Inu-Puppy-Cam', 'http://www.fastcodesign.com/multisite_files/codesign/imagecache/slideshow-large/slides/7167033774-b0ccd5566e-b.jpg', '2012-09-27 22:39:23.533835', '2012-09-28 17:08:30.126556', 'Junu Yang')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (20, 'The Pixar Touch - history of Pixar - Blog - Pixar story rules (one version)', 'http://www.pixartouchbook.com/blog/2011/5/15/pixar-story-rules-one-version.html', 'http://cdn2.sbnation.com/entry_photo_images/4386103/DSC04218_large_verge_super_wide.jpg', '2012-09-27 22:39:23.565809', '2012-09-28 17:08:30.129717', 'Jackie Steck')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "entries" ("id","title","link","imgurl","created_at","updated_at","author") VALUES (21, 'https://live.leapmotion.com/index.html', 'https://live.leapmotion.com/index.html', 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', '2012-09-27 22:39:23.622753', '2012-09-28 17:08:30.132738', 'Julie Regina')
+  [1m[36m (0.3ms)[0m  [1mDROP TABLE "altered_entries"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120928172409')
+  [1m[36m (4.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("delayed_jobs")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('delayed_jobs_priority')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("entries")
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-28 13:30:09 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[35mEntry Load (0.4ms)[0m  SELECT "entries".* FROM "entries" ORDER BY created_at DESC
+  Rendered static_pages/home.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 44ms (Views: 7.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-28 13:30:09 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-28 13:30:10 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-28 13:30:10 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-09-28 13:30:10 -0400
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-28 13:30:10 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-09-28 13:30:10 -0400
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-09-28 13:30:10 -0400
+Served asset /jquery.masonry.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-09-28 13:30:10 -0400
+Served asset /masonry.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-28 13:30:10 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-28 13:30:10 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-09-28 13:30:10 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-28 13:30:10 -0400
+Processing by StaticPagesController#home as */*
+  [1m[36mEntry Load (0.3ms)[0m  [1mSELECT "entries".* FROM "entries" ORDER BY created_at DESC[0m
+  Rendered static_pages/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.3ms)
