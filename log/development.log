@@ -8986,3 +8986,747 @@ Served asset /masonry.js - 304 Not Modified (0ms)
 
 Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-07-18 22:47:47 -0400
 Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+  [1m[36m (1.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.2ms)[0m  CREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "link" varchar(255), "imgurl" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (2.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (2.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120619163928')[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-27 17:46:33 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" ORDER BY created_at DESC[0m
+  Rendered static_pages/home.html.erb within layouts/application (1.8ms)
+Compiled static_pages.css  (36ms)  (pid 42233)
+Compiled application.css  (53ms)  (pid 42233)
+Compiled jquery.js  (16ms)  (pid 42233)
+Compiled entries.js  (152ms)  (pid 42233)
+Compiled jquery.masonry.min.js  (0ms)  (pid 42233)
+Compiled masonry.js  (0ms)  (pid 42233)
+Compiled application.js  (703ms)  (pid 42233)
+Completed 200 OK in 958ms (Views: 922.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-27 17:46:34 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-27 17:46:34 -0400
+Served asset /static_pages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-09-27 17:46:34 -0400
+Served asset /entries.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-27 17:46:34 -0400
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-09-27 17:46:34 -0400
+Served asset /entries.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-27 17:46:34 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-09-27 17:46:34 -0400
+Served asset /jquery.masonry.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-09-27 17:46:34 -0400
+Served asset /masonry.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-27 17:46:34 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-27 17:46:34 -0400
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-09-27 17:46:34 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (4ms)
+
+
+Started GET "/parse" for 127.0.0.1 at 2012-09-27 17:46:38 -0400
+Processing by EntriesController#parse_feed as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateEntries (20120619163928)
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("entries")
+Completed 500 Internal Server Error in 220476ms
+
+NoMethodError (undefined method `find_or_create_by_link_and_title_and_author' for #<Class:0x007ff707c61de8>):
+  app/controllers/entries_controller.rb:143:in `block in save_scraped_data'
+  app/controllers/entries_controller.rb:142:in `upto'
+  app/controllers/entries_controller.rb:142:in `save_scraped_data'
+  app/controllers/entries_controller.rb:137:in `get_largest_image'
+  app/controllers/entries_controller.rb:98:in `scrape_links'
+  app/controllers/entries_controller.rb:48:in `parse_feed'
+
+
+  Rendered /Users/jyang/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.8ms)
+  Rendered /Users/jyang/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/jyang/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.5ms)
+  [1m[36m (1.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (5.7ms)[0m  CREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "link" varchar(255), "imgurl" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (1.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120619163928')[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateEntries (20120619163928)
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("entries")
+
+
+Started GET "/parse" for 127.0.0.1 at 2012-09-27 17:53:59 -0400
+Processing by EntriesController#parse_feed as HTML
+Completed 500 Internal Server Error in 102067ms
+
+NoMethodError (undefined method `find_or_create_by_link_and_title_and_author' for #<Class:0x007ff705b5c2d8>):
+  app/controllers/entries_controller.rb:143:in `block in save_scraped_data'
+  app/controllers/entries_controller.rb:142:in `upto'
+  app/controllers/entries_controller.rb:142:in `save_scraped_data'
+  app/controllers/entries_controller.rb:137:in `get_largest_image'
+  app/controllers/entries_controller.rb:98:in `scrape_links'
+  app/controllers/entries_controller.rb:48:in `parse_feed'
+
+
+  Rendered /Users/jyang/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /Users/jyang/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jyang/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.8ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateEntries (20120619163928)
+Migrating to AddAuthorToEntry (20120927222051)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (47.2ms)[0m  ALTER TABLE "entries" ADD "author" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120927222051')[0m
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("entries")[0m
+
+
+Started GET "/parse" for 127.0.0.1 at 2012-09-27 18:21:29 -0400
+Processing by EntriesController#parse_feed as HTML
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://graphicnovel-hybrid4.peugeot.com/start.html' AND "entries"."title" = 'Peugeot HYbrid4 presents : The hybrid graphic novel' AND "entries"."author" = 'Michael Sy Lee' LIMIT 1
+Completed 500 Internal Server Error in 133608ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: author):
+  app/controllers/entries_controller.rb:143:in `block in save_scraped_data'
+  app/controllers/entries_controller.rb:142:in `upto'
+  app/controllers/entries_controller.rb:142:in `save_scraped_data'
+  app/controllers/entries_controller.rb:137:in `get_largest_image'
+  app/controllers/entries_controller.rb:98:in `scrape_links'
+  app/controllers/entries_controller.rb:48:in `parse_feed'
+
+
+  Rendered /Users/jyang/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /Users/jyang/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jyang/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+  [1m[36m (1.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "link" varchar(255), "imgurl" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "author" varchar(255)) 
+  [1m[36m (1.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (1.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (2.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120927222051')[0m
+  [1m[35m (1.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120619163928')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateEntries (20120619163928)
+Migrating to AddAuthorToEntry (20120927222051)
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("entries")
+
+
+Started GET "/parse" for 127.0.0.1 at 2012-09-27 18:24:20 -0400
+Processing by EntriesController#parse_feed as HTML
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://graphicnovel-hybrid4.peugeot.com/start.html' AND "entries"."title" = 'Peugeot HYbrid4 presents : The hybrid graphic novel' AND "entries"."author" = 'Michael Sy Lee' LIMIT 1[0m
+Completed 500 Internal Server Error in 78632ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: author):
+  app/controllers/entries_controller.rb:143:in `block in save_scraped_data'
+  app/controllers/entries_controller.rb:142:in `upto'
+  app/controllers/entries_controller.rb:142:in `save_scraped_data'
+  app/controllers/entries_controller.rb:137:in `get_largest_image'
+  app/controllers/entries_controller.rb:98:in `scrape_links'
+  app/controllers/entries_controller.rb:48:in `parse_feed'
+
+
+  Rendered /Users/jyang/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/jyang/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/jyang/.rvm/gems/ruby-1.9.3-p0/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+
+
+Started GET "/parse" for 127.0.0.1 at 2012-09-27 18:26:19 -0400
+Processing by EntriesController#parse_feed as HTML
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://graphicnovel-hybrid4.peugeot.com/start.html' AND "entries"."title" = 'Peugeot HYbrid4 presents : The hybrid graphic novel' AND "entries"."author" = 'Michael Sy Lee' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `author`
+  [1m[35mSQL (46.1ms)[0m  INSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["author", "Michael Sy Lee"], ["created_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00], ["imgurl", nil], ["link", "http://graphicnovel-hybrid4.peugeot.com/start.html"], ["title", "Peugeot HYbrid4 presents : The hybrid graphic novel"], ["updated_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', "updated_at" = '2012-09-27 22:31:05.909560' WHERE "entries"."id" = 1[0m
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://androidniceties.tumblr.com/' AND "entries"."title" = 'Android niceties' AND "entries"."author" = 'Julie Regina' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Binary data inserted for `string` type on column `author`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["author", "Julie Regina"], ["created_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00], ["imgurl", nil], ["link", "http://androidniceties.tumblr.com/"], ["title", "Android niceties"], ["updated_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  UPDATE "entries" SET "imgurl" = 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', "updated_at" = '2012-09-27 22:31:05.916086' WHERE "entries"."id" = 2
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.youtube.com/watch%3Fv%3D3o6pcbhylmQ%26feature%3Dplayer_embedded%23!' AND "entries"."title" = 'The MakerBot Replicator 2 Desktop 3D Printer - Announcement - YouTube' AND "entries"."author" = 'Julie Regina' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `author`
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["author", "Julie Regina"], ["created_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00], ["imgurl", nil], ["link", "http://www.youtube.com/watch%3Fv%3D3o6pcbhylmQ%26feature%3Dplayer_embedded%23!"], ["title", "The MakerBot Replicator 2 Desktop 3D Printer - Announcement - YouTube"], ["updated_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://thenextweb.com/dd/2012/09/09/check-25-sources-great-mobile-design-inspiration/%3Futm_source%3DTwitter%26utm_campaign%3Dsocial%2520media%26utm_medium%3Dshare%2520button%26awesm%3Dtnw.to_c4Xz%26utm_content%3DCheck%2520out%2520these%252025%2520sources%2520of%2520great%2520mobile%2520design%2520inspiration' AND "entries"."title" = 'Where to Find Great Mobile Design Inspiration' AND "entries"."author" = 'David Boardman' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `author`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["author", "David Boardman"], ["created_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00], ["imgurl", nil], ["link", "http://thenextweb.com/dd/2012/09/09/check-25-sources-great-mobile-design-inspiration/%3Futm_source%3DTwitter%26utm_campaign%3Dsocial%2520media%26utm_medium%3Dshare%2520button%26awesm%3Dtnw.to_c4Xz%26utm_content%3DCheck%2520out%2520these%252025%2520sources%2520of%2520great%2520mobile%2520design%2520inspiration"], ["title", "Where to Find Great Mobile Design Inspiration"], ["updated_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://24.media.tumblr.com/tumblr_mb0bk0aznR1r2wjwko1_500.png', "updated_at" = '2012-09-27 22:31:05.924581' WHERE "entries"."id" = 4[0m
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.slideshare.net/nicolasnova/skeuomorphsininteractiondesignornamentoraffordance%3Ffrom%3Dnew_upload_email' AND "entries"."title" = 'http://www.slideshare.net/nicolasnova/skeuomorphsininteractiondesignornamentoraffordance%3Ffrom%3Dnew_upload_email' AND "entries"."author" = 'David Boardman' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Binary data inserted for `string` type on column `author`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["author", "David Boardman"], ["created_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00], ["imgurl", nil], ["link", "http://www.slideshare.net/nicolasnova/skeuomorphsininteractiondesignornamentoraffordance%3Ffrom%3Dnew_upload_email"], ["title", "http://www.slideshare.net/nicolasnova/skeuomorphsininteractiondesignornamentoraffordance%3Ffrom%3Dnew_upload_email"], ["updated_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  UPDATE "entries" SET "imgurl" = 'http://s.ytimg.com/yt/img/no_videos_140-vfl5AhOQY.png', "updated_at" = '2012-09-27 22:31:05.929938' WHERE "entries"."id" = 5
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://rawkes.com/articles/there-is-something-magical-about-firefox-os' AND "entries"."title" = 'There is something magical about Firefox OS | Rawkes' AND "entries"."author" = 'Julie Regina' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `author`
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["author", "Julie Regina"], ["created_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00], ["imgurl", nil], ["link", "http://rawkes.com/articles/there-is-something-magical-about-firefox-os"], ["title", "There is something magical about Firefox OS | Rawkes"], ["updated_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://cdn.thenextweb.com/wp-content/blogs.dir/1/files/2012/09/heart-oscar-e.jpg', "updated_at" = '2012-09-27 22:31:05.934764' WHERE "entries"."id" = 6[0m
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.uxdrinkinggame.com/drink/if-during-your-career-your-title-has-changed-from-ui-to-ia-to-ux-to-id-to-ia-drink/' AND "entries"."title" = 'If during your career, your title has changed from UI to IA to UX to ID to IA, drink' AND "entries"."author" = 'Julie Regina' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Binary data inserted for `string` type on column `author`
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["author", "Julie Regina"], ["created_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00], ["imgurl", nil], ["link", "http://www.uxdrinkinggame.com/drink/if-during-your-career-your-title-has-changed-from-ui-to-ia-to-ux-to-id-to-ia-drink/"], ["title", "If during your career, your title has changed from UI to IA to UX to ID to IA, drink"], ["updated_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.cooper.com/journal/2012/08/the-best-interface-is-no-interface.html/' AND "entries"."title" = '
+ 					The Cooper Journal: The best interface is no interface			 ' AND "entries"."author" = 'Julie Regina' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Binary data inserted for `string` type on column `author`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["author", "Julie Regina"], ["created_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00], ["imgurl", nil], ["link", "http://www.cooper.com/journal/2012/08/the-best-interface-is-no-interface.html/"], ["title", "\n        \t\t\t\t\tThe Cooper Journal: The best interface is no interface\t\t\t        "], ["updated_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  UPDATE "entries" SET "imgurl" = 'http://farm9.staticflickr.com/8456/7980043535_c6a39de9c8_o.jpg', "updated_at" = '2012-09-27 22:31:05.943856' WHERE "entries"."id" = 8
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.densitydesign.org/2012/09/visualizing-nyc/' AND "entries"."title" = 'Density Design | Visualizing NYC' AND "entries"."author" = 'David Boardman' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `author`
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["author", "David Boardman"], ["created_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00], ["imgurl", nil], ["link", "http://www.densitydesign.org/2012/09/visualizing-nyc/"], ["title", "Density Design  | Visualizing NYC"], ["updated_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', "updated_at" = '2012-09-27 22:31:05.948570' WHERE "entries"."id" = 9[0m
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://envisioningtech.com/envisioning-the-smartphone-of-the-future/' AND "entries"."title" = 'The Smartphone of the Future – an Explosive Wealth of Possibilities | Envisioning Technology' AND "entries"."author" = 'David Boardman' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Binary data inserted for `string` type on column `author`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["author", "David Boardman"], ["created_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00], ["imgurl", nil], ["link", "http://envisioningtech.com/envisioning-the-smartphone-of-the-future/"], ["title", "The Smartphone of the Future – an Explosive Wealth of Possibilities | Envisioning Technology"], ["updated_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  UPDATE "entries" SET "imgurl" = 'http://www.cooper.com/wp-content/uploads/2012/08/uisystems_goldenkrishna.png', "updated_at" = '2012-09-27 22:31:05.953996' WHERE "entries"."id" = 10
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://blog.visual.ly/interaction-design-for-data-visualizations/' AND "entries"."title" = 'Interaction Design for Data Visualizations | Visual.ly Blog' AND "entries"."author" = 'David Boardman' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `author`
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["author", "David Boardman"], ["created_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00], ["imgurl", nil], ["link", "http://blog.visual.ly/interaction-design-for-data-visualizations/"], ["title", "Interaction Design for Data Visualizations | Visual.ly Blog"], ["updated_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://www.densitydesign.org/wp-content/uploads/2012/09/Schermata-09-2456176-alle-16.21.21.png', "updated_at" = '2012-09-27 22:31:05.959196' WHERE "entries"."id" = 11[0m
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://vimeo.com/46304267' AND "entries"."title" = 'Sight on Vimeo' AND "entries"."author" = 'Christian Palino' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Binary data inserted for `string` type on column `author`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["author", "Christian Palino"], ["created_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00], ["imgurl", nil], ["link", "http://vimeo.com/46304267"], ["title", "Sight on Vimeo"], ["updated_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  UPDATE "entries" SET "imgurl" = 'http://envisioningtech.com/wp/wp-content/uploads/2012/08/comparing-02.png', "updated_at" = '2012-09-27 22:31:05.964810' WHERE "entries"."id" = 12
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://vimeo.com/45417241' AND "entries"."title" = 'The V Motion Project on Vimeo' AND "entries"."author" = 'David Boardman' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `author`
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["author", "David Boardman"], ["created_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00], ["imgurl", nil], ["link", "http://vimeo.com/45417241"], ["title", "The V Motion Project on Vimeo"], ["updated_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://blog.visual.ly/wp-content/uploads/2012/07/xhuffingtonpost_us_election_2012.png,q547b7b.pagespeed.ic.-3WGnnJaZM.png', "updated_at" = '2012-09-27 22:31:05.969790' WHERE "entries"."id" = 13[0m
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://fffff.at/noisy-typer-a-typewriter-for-your-laptop/' AND "entries"."title" = 'Noisy Typer – a typewriter for your laptop. | F.A.T.' AND "entries"."author" = 'David Boardman' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Binary data inserted for `string` type on column `author`
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["author", "David Boardman"], ["created_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00], ["imgurl", nil], ["link", "http://fffff.at/noisy-typer-a-typewriter-for-your-laptop/"], ["title", "Noisy Typer – a typewriter for your laptop. | F.A.T."], ["updated_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  UPDATE "entries" SET "imgurl" = 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', "updated_at" = '2012-09-27 22:31:05.975697' WHERE "entries"."id" = 14
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://vimeo.com/41772735' AND "entries"."title" = 'How to Use FF Chartwell on Vimeo' AND "entries"."author" = 'Vivian Lo' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `author`
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["author", "Vivian Lo"], ["created_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00], ["imgurl", nil], ["link", "http://vimeo.com/41772735"], ["title", "How to Use FF Chartwell on Vimeo"], ["updated_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', "updated_at" = '2012-09-27 22:31:05.982152' WHERE "entries"."id" = 15[0m
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://pinterest.com/source/uniqlo.com/' AND "entries"."title" = 'Uniqlo / Pinterest' AND "entries"."author" = 'Julie Regina' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Binary data inserted for `string` type on column `author`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["author", "Julie Regina"], ["created_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00], ["imgurl", nil], ["link", "http://pinterest.com/source/uniqlo.com/"], ["title", "Uniqlo / Pinterest"], ["updated_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  UPDATE "entries" SET "imgurl" = 'http://fffff.at/files/2012/08/pussyfatbanner-color.jpg?e83a2c', "updated_at" = '2012-09-27 22:31:05.987759' WHERE "entries"."id" = 16
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.fastcodesign.com/1670096/create-uis-out-of-anything-with-this-kit-from-mit%231' AND "entries"."title" = 'Create UIs Out of Anything, With This Kit From MIT | Co.Design: business + innovation + design' AND "entries"."author" = 'Junu Yang' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `author`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["author", "Junu Yang"], ["created_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00], ["imgurl", nil], ["link", "http://www.fastcodesign.com/1670096/create-uis-out-of-anything-with-this-kit-from-mit%231"], ["title", "Create UIs Out of Anything, With This Kit From MIT | Co.Design: business + innovation + design"], ["updated_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', "updated_at" = '2012-09-27 22:31:05.993864' WHERE "entries"."id" = 17[0m
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.theverge.com/2012/6/19/3094096/frog-design-android-feel-ux-sharp' AND "entries"."title" = 'Frog redesigns the Android user experience with Feel_UX | The Verge' AND "entries"."author" = 'Julie Regina' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Binary data inserted for `string` type on column `author`
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["author", "Julie Regina"], ["created_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00], ["imgurl", nil], ["link", "http://www.theverge.com/2012/6/19/3094096/frog-design-android-feel-ux-sharp"], ["title", "Frog redesigns the Android user experience with Feel_UX | The Verge"], ["updated_at", Thu, 27 Sep 2012 22:31:05 UTC +00:00]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  UPDATE "entries" SET "imgurl" = 'http://media-cache-ec2.pinterest.com/upload/287737863663652788_GQphmViL_b.jpg', "updated_at" = '2012-09-27 22:31:06.000589' WHERE "entries"."id" = 18
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.ustream.tv/channel-popup/Shiba-Inu-Puppy-Cam' AND "entries"."title" = 'Ustream.Tv' AND "entries"."author" = 'Junu Yang' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `author`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["author", "Junu Yang"], ["created_at", Thu, 27 Sep 2012 22:31:06 UTC +00:00], ["imgurl", nil], ["link", "http://www.ustream.tv/channel-popup/Shiba-Inu-Puppy-Cam"], ["title", "Ustream.Tv"], ["updated_at", Thu, 27 Sep 2012 22:31:06 UTC +00:00]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://www.fastcodesign.com/multisite_files/codesign/imagecache/slideshow-large/slides/7167033774-b0ccd5566e-b.jpg', "updated_at" = '2012-09-27 22:31:06.006842' WHERE "entries"."id" = 19[0m
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.pixartouchbook.com/blog/2011/5/15/pixar-story-rules-one-version.html' AND "entries"."title" = 'The Pixar Touch - history of Pixar - Blog - Pixar story rules (one version)' AND "entries"."author" = 'Jackie Steck' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Binary data inserted for `string` type on column `author`
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["author", "Jackie Steck"], ["created_at", Thu, 27 Sep 2012 22:31:06 UTC +00:00], ["imgurl", nil], ["link", "http://www.pixartouchbook.com/blog/2011/5/15/pixar-story-rules-one-version.html"], ["title", "The Pixar Touch - history of Pixar - Blog - Pixar story rules (one version)"], ["updated_at", Thu, 27 Sep 2012 22:31:06 UTC +00:00]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  UPDATE "entries" SET "imgurl" = 'http://cdn2.sbnation.com/entry_photo_images/4386103/DSC04218_large_verge_super_wide.jpg', "updated_at" = '2012-09-27 22:31:06.012722' WHERE "entries"."id" = 20
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'https://live.leapmotion.com/index.html' AND "entries"."title" = 'https://live.leapmotion.com/index.html' AND "entries"."author" = 'Julie Regina' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `author`
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["author", "Julie Regina"], ["created_at", Thu, 27 Sep 2012 22:31:06 UTC +00:00], ["imgurl", nil], ["link", "https://live.leapmotion.com/index.html"], ["title", "https://live.leapmotion.com/index.html"], ["updated_at", Thu, 27 Sep 2012 22:31:06 UTC +00:00]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', "updated_at" = '2012-09-27 22:31:06.019517' WHERE "entries"."id" = 21[0m
+  [1m[35m (2.5ms)[0m  commit transaction
+  Rendered entries/parse_feed.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 286226ms (Views: 46.2ms | ActiveRecord: 124.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-27 18:31:06 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-09-27 18:31:06 -0400
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-27 18:31:06 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-09-27 18:31:06 -0400
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-27 18:31:06 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-09-27 18:31:06 -0400
+Served asset /jquery.masonry.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-27 18:31:06 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-09-27 18:31:06 -0400
+Served asset /masonry.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-27 18:31:06 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-27 18:31:06 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-09-27 18:31:07 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-27 18:31:37 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mEntry Load (0.5ms)[0m  [1mSELECT "entries".* FROM "entries" ORDER BY created_at DESC[0m
+  Rendered static_pages/home.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 56ms (Views: 53.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-27 18:31:37 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-27 18:31:37 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-27 18:31:37 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-27 18:31:37 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-09-27 18:31:37 -0400
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-09-27 18:31:37 -0400
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-09-27 18:31:37 -0400
+Served asset /jquery.masonry.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-09-27 18:31:37 -0400
+Served asset /masonry.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-27 18:31:37 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-27 18:31:37 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-27 18:31:37 -0400
+Processing by StaticPagesController#home as */*
+  [1m[35mEntry Load (0.3ms)[0m  SELECT "entries".* FROM "entries" ORDER BY created_at DESC
+  Rendered static_pages/home.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 0.3ms)
+  [1m[36m (1.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.2ms)[0m  CREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "link" varchar(255), "imgurl" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "author" varchar(255)) 
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (1.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20120927222051')[0m
+  [1m[35m (1.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120619163928')
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateEntries (20120619163928)
+Migrating to AddAuthorToEntry (20120927222051)
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("entries")
+
+
+Started GET "/parse" for 127.0.0.1 at 2012-09-27 18:34:23 -0400
+Processing by EntriesController#parse_feed as HTML
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://graphicnovel-hybrid4.peugeot.com/start.html' AND "entries"."title" = 'Peugeot HYbrid4 presents : The hybrid graphic novel' AND "entries"."author" = 'Michael Sy Lee' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `author`
+  [1m[36mSQL (49.8ms)[0m  [1mINSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["author", "Michael Sy Lee"], ["created_at", Thu, 27 Sep 2012 22:39:21 UTC +00:00], ["imgurl", nil], ["link", "http://graphicnovel-hybrid4.peugeot.com/start.html"], ["title", "Peugeot HYbrid4 presents : The hybrid graphic novel"], ["updated_at", Thu, 27 Sep 2012 22:39:21 UTC +00:00]]
+  [1m[35m (72.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mEntry Load (67.6ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://androidniceties.tumblr.com/' AND "entries"."title" = 'Android niceties' AND "entries"."author" = 'Julie Regina' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `author`
+  [1m[36mSQL (33.5ms)[0m  [1mINSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["author", "Julie Regina"], ["created_at", Thu, 27 Sep 2012 22:39:21 UTC +00:00], ["imgurl", nil], ["link", "http://androidniceties.tumblr.com/"], ["title", "Android niceties"], ["updated_at", Thu, 27 Sep 2012 22:39:21 UTC +00:00]]
+  [1m[35m (212.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (61.2ms)[0m  UPDATE "entries" SET "imgurl" = 'http://24.media.tumblr.com/tumblr_mb0bk0aznR1r2wjwko1_500.png', "updated_at" = '2012-09-27 22:39:21.597249' WHERE "entries"."id" = 2
+  [1m[36m (132.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (61.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.youtube.com/watch%3Fv%3D3o6pcbhylmQ%26feature%3Dplayer_embedded%23!' AND "entries"."title" = 'The MakerBot Replicator 2 Desktop 3D Printer - Announcement - YouTube' AND "entries"."author" = 'Julie Regina' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `author`
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["author", "Julie Regina"], ["created_at", Thu, 27 Sep 2012 22:39:21 UTC +00:00], ["imgurl", nil], ["link", "http://www.youtube.com/watch%3Fv%3D3o6pcbhylmQ%26feature%3Dplayer_embedded%23!"], ["title", "The MakerBot Replicator 2 Desktop 3D Printer - Announcement - YouTube"], ["updated_at", Thu, 27 Sep 2012 22:39:21 UTC +00:00]]
+  [1m[36m (94.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (43.6ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://s.ytimg.com/yt/img/no_videos_140-vfl5AhOQY.png', "updated_at" = '2012-09-27 22:39:21.952128' WHERE "entries"."id" = 3[0m
+  [1m[35m (100.4ms)[0m  commit transaction
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://thenextweb.com/dd/2012/09/09/check-25-sources-great-mobile-design-inspiration/%3Futm_source%3DTwitter%26utm_campaign%3Dsocial%2520media%26utm_medium%3Dshare%2520button%26awesm%3Dtnw.to_c4Xz%26utm_content%3DCheck%2520out%2520these%252025%2520sources%2520of%2520great%2520mobile%2520design%2520inspiration' AND "entries"."title" = 'Where to Find Great Mobile Design Inspiration' AND "entries"."author" = 'David Boardman' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `author`
+  [1m[36mSQL (61.3ms)[0m  [1mINSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["author", "David Boardman"], ["created_at", Thu, 27 Sep 2012 22:39:22 UTC +00:00], ["imgurl", nil], ["link", "http://thenextweb.com/dd/2012/09/09/check-25-sources-great-mobile-design-inspiration/%3Futm_source%3DTwitter%26utm_campaign%3Dsocial%2520media%26utm_medium%3Dshare%2520button%26awesm%3Dtnw.to_c4Xz%26utm_content%3DCheck%2520out%2520these%252025%2520sources%2520of%2520great%2520mobile%2520design%2520inspiration"], ["title", "Where to Find Great Mobile Design Inspiration"], ["updated_at", Thu, 27 Sep 2012 22:39:22 UTC +00:00]]
+  [1m[35m (43.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  UPDATE "entries" SET "imgurl" = 'http://cdn.thenextweb.com/wp-content/blogs.dir/1/files/2012/09/heart-oscar-e.jpg', "updated_at" = '2012-09-27 22:39:22.205047' WHERE "entries"."id" = 4
+  [1m[36m (186.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.slideshare.net/nicolasnova/skeuomorphsininteractiondesignornamentoraffordance%3Ffrom%3Dnew_upload_email' AND "entries"."title" = 'http://www.slideshare.net/nicolasnova/skeuomorphsininteractiondesignornamentoraffordance%3Ffrom%3Dnew_upload_email' AND "entries"."author" = 'David Boardman' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `author`
+  [1m[35mSQL (10.4ms)[0m  INSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["author", "David Boardman"], ["created_at", Thu, 27 Sep 2012 22:39:22 UTC +00:00], ["imgurl", nil], ["link", "http://www.slideshare.net/nicolasnova/skeuomorphsininteractiondesignornamentoraffordance%3Ffrom%3Dnew_upload_email"], ["title", "http://www.slideshare.net/nicolasnova/skeuomorphsininteractiondesignornamentoraffordance%3Ffrom%3Dnew_upload_email"], ["updated_at", Thu, 27 Sep 2012 22:39:22 UTC +00:00]]
+  [1m[36m (64.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (1.5ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://rawkes.com/articles/there-is-something-magical-about-firefox-os' AND "entries"."title" = 'There is something magical about Firefox OS | Rawkes' AND "entries"."author" = 'Julie Regina' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `author`
+  [1m[35mSQL (62.5ms)[0m  INSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["author", "Julie Regina"], ["created_at", Thu, 27 Sep 2012 22:39:22 UTC +00:00], ["imgurl", nil], ["link", "http://rawkes.com/articles/there-is-something-magical-about-firefox-os"], ["title", "There is something magical about Firefox OS | Rawkes"], ["updated_at", Thu, 27 Sep 2012 22:39:22 UTC +00:00]]
+  [1m[36m (182.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://farm9.staticflickr.com/8456/7980043535_c6a39de9c8_o.jpg', "updated_at" = '2012-09-27 22:39:22.740212' WHERE "entries"."id" = 6[0m
+  [1m[35m (26.3ms)[0m  commit transaction
+  [1m[36mEntry Load (0.4ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.uxdrinkinggame.com/drink/if-during-your-career-your-title-has-changed-from-ui-to-ia-to-ux-to-id-to-ia-drink/' AND "entries"."title" = 'If during your career, your title has changed from UI to IA to UX to ID to IA, drink' AND "entries"."author" = 'Julie Regina' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `author`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["author", "Julie Regina"], ["created_at", Thu, 27 Sep 2012 22:39:22 UTC +00:00], ["imgurl", nil], ["link", "http://www.uxdrinkinggame.com/drink/if-during-your-career-your-title-has-changed-from-ui-to-ia-to-ux-to-id-to-ia-drink/"], ["title", "If during your career, your title has changed from UI to IA to UX to ID to IA, drink"], ["updated_at", Thu, 27 Sep 2012 22:39:22 UTC +00:00]]
+  [1m[35m (57.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  UPDATE "entries" SET "imgurl" = 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', "updated_at" = '2012-09-27 22:39:22.830358' WHERE "entries"."id" = 7
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.cooper.com/journal/2012/08/the-best-interface-is-no-interface.html/' AND "entries"."title" = '
+ 					The Cooper Journal: The best interface is no interface			 ' AND "entries"."author" = 'Julie Regina' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `author`
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["author", "Julie Regina"], ["created_at", Thu, 27 Sep 2012 22:39:22 UTC +00:00], ["imgurl", nil], ["link", "http://www.cooper.com/journal/2012/08/the-best-interface-is-no-interface.html/"], ["title", "\n        \t\t\t\t\tThe Cooper Journal: The best interface is no interface\t\t\t        "], ["updated_at", Thu, 27 Sep 2012 22:39:22 UTC +00:00]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://www.cooper.com/wp-content/uploads/2012/08/uisystems_goldenkrishna.png', "updated_at" = '2012-09-27 22:39:22.836222' WHERE "entries"."id" = 8[0m
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.densitydesign.org/2012/09/visualizing-nyc/' AND "entries"."title" = 'Density Design | Visualizing NYC' AND "entries"."author" = 'David Boardman' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Binary data inserted for `string` type on column `author`
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["author", "David Boardman"], ["created_at", Thu, 27 Sep 2012 22:39:22 UTC +00:00], ["imgurl", nil], ["link", "http://www.densitydesign.org/2012/09/visualizing-nyc/"], ["title", "Density Design  | Visualizing NYC"], ["updated_at", Thu, 27 Sep 2012 22:39:22 UTC +00:00]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (10.7ms)[0m  UPDATE "entries" SET "imgurl" = 'http://www.densitydesign.org/wp-content/uploads/2012/09/Schermata-09-2456176-alle-16.21.21.png', "updated_at" = '2012-09-27 22:39:22.842176' WHERE "entries"."id" = 9
+  [1m[36m (56.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://envisioningtech.com/envisioning-the-smartphone-of-the-future/' AND "entries"."title" = 'The Smartphone of the Future – an Explosive Wealth of Possibilities | Envisioning Technology' AND "entries"."author" = 'David Boardman' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `author`
+  [1m[35mSQL (13.0ms)[0m  INSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["author", "David Boardman"], ["created_at", Thu, 27 Sep 2012 22:39:22 UTC +00:00], ["imgurl", nil], ["link", "http://envisioningtech.com/envisioning-the-smartphone-of-the-future/"], ["title", "The Smartphone of the Future – an Explosive Wealth of Possibilities | Envisioning Technology"], ["updated_at", Thu, 27 Sep 2012 22:39:22 UTC +00:00]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://envisioningtech.com/wp/wp-content/uploads/2012/08/comparing-02.png', "updated_at" = '2012-09-27 22:39:22.927411' WHERE "entries"."id" = 10[0m
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://blog.visual.ly/interaction-design-for-data-visualizations/' AND "entries"."title" = 'Interaction Design for Data Visualizations | Visual.ly Blog' AND "entries"."author" = 'David Boardman' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Binary data inserted for `string` type on column `author`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["author", "David Boardman"], ["created_at", Thu, 27 Sep 2012 22:39:22 UTC +00:00], ["imgurl", nil], ["link", "http://blog.visual.ly/interaction-design-for-data-visualizations/"], ["title", "Interaction Design for Data Visualizations | Visual.ly Blog"], ["updated_at", Thu, 27 Sep 2012 22:39:22 UTC +00:00]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  UPDATE "entries" SET "imgurl" = 'http://blog.visual.ly/wp-content/uploads/2012/07/xhuffingtonpost_us_election_2012.png,q547b7b.pagespeed.ic.-3WGnnJaZM.png', "updated_at" = '2012-09-27 22:39:22.933410' WHERE "entries"."id" = 11
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://vimeo.com/46304267' AND "entries"."title" = 'Sight on Vimeo' AND "entries"."author" = 'Christian Palino' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `author`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["author", "Christian Palino"], ["created_at", Thu, 27 Sep 2012 22:39:22 UTC +00:00], ["imgurl", nil], ["link", "http://vimeo.com/46304267"], ["title", "Sight on Vimeo"], ["updated_at", Thu, 27 Sep 2012 22:39:22 UTC +00:00]]
+  [1m[36m (36.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (12.9ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', "updated_at" = '2012-09-27 22:39:22.974445' WHERE "entries"."id" = 12[0m
+  [1m[35m (65.7ms)[0m  commit transaction
+  [1m[36mEntry Load (10.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://vimeo.com/45417241' AND "entries"."title" = 'The V Motion Project on Vimeo' AND "entries"."author" = 'David Boardman' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `author`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["author", "David Boardman"], ["created_at", Thu, 27 Sep 2012 22:39:23 UTC +00:00], ["imgurl", nil], ["link", "http://vimeo.com/45417241"], ["title", "The V Motion Project on Vimeo"], ["updated_at", Thu, 27 Sep 2012 22:39:23 UTC +00:00]]
+  [1m[35m (76.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  UPDATE "entries" SET "imgurl" = 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', "updated_at" = '2012-09-27 22:39:23.144811' WHERE "entries"."id" = 13
+  [1m[36m (10.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://fffff.at/noisy-typer-a-typewriter-for-your-laptop/' AND "entries"."title" = 'Noisy Typer – a typewriter for your laptop. | F.A.T.' AND "entries"."author" = 'David Boardman' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `author`
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["author", "David Boardman"], ["created_at", Thu, 27 Sep 2012 22:39:23 UTC +00:00], ["imgurl", nil], ["link", "http://fffff.at/noisy-typer-a-typewriter-for-your-laptop/"], ["title", "Noisy Typer – a typewriter for your laptop. | F.A.T."], ["updated_at", Thu, 27 Sep 2012 22:39:23 UTC +00:00]]
+  [1m[36m (38.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://fffff.at/files/2012/08/pussyfatbanner-color.jpg?e83a2c', "updated_at" = '2012-09-27 22:39:23.198180' WHERE "entries"."id" = 14[0m
+  [1m[35m (56.2ms)[0m  commit transaction
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://vimeo.com/41772735' AND "entries"."title" = 'How to Use FF Chartwell on Vimeo' AND "entries"."author" = 'Vivian Lo' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Binary data inserted for `string` type on column `author`
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["author", "Vivian Lo"], ["created_at", Thu, 27 Sep 2012 22:39:23 UTC +00:00], ["imgurl", nil], ["link", "http://vimeo.com/41772735"], ["title", "How to Use FF Chartwell on Vimeo"], ["updated_at", Thu, 27 Sep 2012 22:39:23 UTC +00:00]]
+  [1m[35m (31.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  UPDATE "entries" SET "imgurl" = 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', "updated_at" = '2012-09-27 22:39:23.289834' WHERE "entries"."id" = 15
+  [1m[36m (157.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://pinterest.com/source/uniqlo.com/' AND "entries"."title" = 'Uniqlo / Pinterest' AND "entries"."author" = 'Julie Regina' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `author`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["author", "Julie Regina"], ["created_at", Thu, 27 Sep 2012 22:39:23 UTC +00:00], ["imgurl", nil], ["link", "http://pinterest.com/source/uniqlo.com/"], ["title", "Uniqlo / Pinterest"], ["updated_at", Thu, 27 Sep 2012 22:39:23 UTC +00:00]]
+  [1m[36m (4.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://media-cache-ec2.pinterest.com/upload/287737863663652788_GQphmViL_b.jpg', "updated_at" = '2012-09-27 22:39:23.454906' WHERE "entries"."id" = 16[0m
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.fastcodesign.com/1670096/create-uis-out-of-anything-with-this-kit-from-mit%231' AND "entries"."title" = 'Create UIs Out of Anything, With This Kit From MIT | Co.Design: business + innovation + design' AND "entries"."author" = 'Junu Yang' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Binary data inserted for `string` type on column `author`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["author", "Junu Yang"], ["created_at", Thu, 27 Sep 2012 22:39:23 UTC +00:00], ["imgurl", nil], ["link", "http://www.fastcodesign.com/1670096/create-uis-out-of-anything-with-this-kit-from-mit%231"], ["title", "Create UIs Out of Anything, With This Kit From MIT | Co.Design: business + innovation + design"], ["updated_at", Thu, 27 Sep 2012 22:39:23 UTC +00:00]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  UPDATE "entries" SET "imgurl" = 'http://www.fastcodesign.com/multisite_files/codesign/imagecache/slideshow-large/slides/7167033774-b0ccd5566e-b.jpg', "updated_at" = '2012-09-27 22:39:23.462908' WHERE "entries"."id" = 17
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.theverge.com/2012/6/19/3094096/frog-design-android-feel-ux-sharp' AND "entries"."title" = 'Frog redesigns the Android user experience with Feel_UX | The Verge' AND "entries"."author" = 'Julie Regina' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `author`
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["author", "Julie Regina"], ["created_at", Thu, 27 Sep 2012 22:39:23 UTC +00:00], ["imgurl", nil], ["link", "http://www.theverge.com/2012/6/19/3094096/frog-design-android-feel-ux-sharp"], ["title", "Frog redesigns the Android user experience with Feel_UX | The Verge"], ["updated_at", Thu, 27 Sep 2012 22:39:23 UTC +00:00]]
+  [1m[36m (7.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (30.1ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://cdn2.sbnation.com/entry_photo_images/4386103/DSC04218_large_verge_super_wide.jpg', "updated_at" = '2012-09-27 22:39:23.474564' WHERE "entries"."id" = 18[0m
+  [1m[35m (27.5ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.ustream.tv/channel-popup/Shiba-Inu-Puppy-Cam' AND "entries"."title" = 'Ustream.Tv' AND "entries"."author" = 'Junu Yang' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Binary data inserted for `string` type on column `author`
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["author", "Junu Yang"], ["created_at", Thu, 27 Sep 2012 22:39:23 UTC +00:00], ["imgurl", nil], ["link", "http://www.ustream.tv/channel-popup/Shiba-Inu-Puppy-Cam"], ["title", "Ustream.Tv"], ["updated_at", Thu, 27 Sep 2012 22:39:23 UTC +00:00]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  UPDATE "entries" SET "imgurl" = 'http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg', "updated_at" = '2012-09-27 22:39:23.537246' WHERE "entries"."id" = 19
+  [1m[36m (27.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."link" = 'http://www.pixartouchbook.com/blog/2011/5/15/pixar-story-rules-one-version.html' AND "entries"."title" = 'The Pixar Touch - history of Pixar - Blog - Pixar story rules (one version)' AND "entries"."author" = 'Jackie Steck' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `author`
+  [1m[35mSQL (5.6ms)[0m  INSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["author", "Jackie Steck"], ["created_at", Thu, 27 Sep 2012 22:39:23 UTC +00:00], ["imgurl", nil], ["link", "http://www.pixartouchbook.com/blog/2011/5/15/pixar-story-rules-one-version.html"], ["title", "The Pixar Touch - history of Pixar - Blog - Pixar story rules (one version)"], ["updated_at", Thu, 27 Sep 2012 22:39:23 UTC +00:00]]
+  [1m[36m (7.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (9.6ms)[0m  [1mUPDATE "entries" SET "imgurl" = 'http://www.pixartouchbook.com/storage/header-med.jpg', "updated_at" = '2012-09-27 22:39:23.579952' WHERE "entries"."id" = 20[0m
+  [1m[35m (31.4ms)[0m  commit transaction
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."link" = 'https://live.leapmotion.com/index.html' AND "entries"."title" = 'https://live.leapmotion.com/index.html' AND "entries"."author" = 'Julie Regina' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Binary data inserted for `string` type on column `author`
+  [1m[36mSQL (18.6ms)[0m  [1mINSERT INTO "entries" ("author", "created_at", "imgurl", "link", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["author", "Julie Regina"], ["created_at", Thu, 27 Sep 2012 22:39:23 UTC +00:00], ["imgurl", nil], ["link", "https://live.leapmotion.com/index.html"], ["title", "https://live.leapmotion.com/index.html"], ["updated_at", Thu, 27 Sep 2012 22:39:23 UTC +00:00]]
+  [1m[35m (26.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  Rendered entries/parse_feed.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 300100ms (Views: 102.8ms | ActiveRecord: 2432.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-27 18:39:23 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-27 18:39:23 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-09-27 18:39:23 -0400
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-27 18:39:23 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-09-27 18:39:23 -0400
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-27 18:39:23 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-09-27 18:39:23 -0400
+Served asset /jquery.masonry.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-09-27 18:39:23 -0400
+Served asset /masonry.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-27 18:39:23 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-27 18:39:23 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-09-27 18:39:24 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-27 20:21:35 -0400
+Processing by StaticPagesController#home as HTML
+  [1m[36mEntry Load (0.3ms)[0m  [1mSELECT "entries".* FROM "entries" ORDER BY created_at DESC[0m
+  Rendered static_pages/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 47ms (Views: 45.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-27 20:21:36 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-27 20:21:36 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.css?body=1" for 127.0.0.1 at 2012-09-27 20:21:36 -0400
+Served asset /entries.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-27 20:21:36 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/entries.js?body=1" for 127.0.0.1 at 2012-09-27 20:21:36 -0400
+Served asset /entries.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-09-27 20:21:36 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.masonry.min.js?body=1" for 127.0.0.1 at 2012-09-27 20:21:36 -0400
+Served asset /jquery.masonry.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/masonry.js?body=1" for 127.0.0.1 at 2012-09-27 20:21:36 -0400
+Served asset /masonry.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-27 20:21:36 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-09-27 20:21:36 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rainbow_bg.png" for 127.0.0.1 at 2012-09-27 20:21:36 -0400
+Served asset /rainbow_bg.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-27 20:21:36 -0400
+Processing by StaticPagesController#home as */*
+  [1m[35mEntry Load (0.3ms)[0m  SELECT "entries".* FROM "entries" ORDER BY created_at DESC
+  Rendered static_pages/home.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 174ms (Views: 172.8ms | ActiveRecord: 0.3ms)

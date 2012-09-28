@@ -59,14 +59,14 @@ class EntriesController < ApplicationController
 			rescue OpenURI::HTTPError
 	         	# do something
 	         	puts "HTTPError"
-	         	 @imglink <<  "http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg"
+	         	 # @imglink <<  "http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg"
 	         	@link_titles << link
 
 
 	       	rescue OpenSSL::SSL::SSLError
 	          	# do something else
 	          	puts "OpenSSL Error"
-	          	 @imglink <<  "http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg"
+	          	# @imglink <<  "http://schbiolenvsci.files.wordpress.com/2012/02/gex_green-sea-turtle.jpg"
 	          	@link_titles << link
 
 	       	else
